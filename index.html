@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>空売り残高</title>
+  <meta name="description" content="JPX翌日報告対応の空売り残高ビューア。銘柄ごとの前日比推移を素早くチェック。">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root{ --bg:#f8fafc;--card:#fff;--muted:#64748b;--line:#cbd5e1;--accent:#2563eb; --pos:#dc2626;--neg:#16a34a; }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,"Hiragino Kaku Gothic ProN","Noto Sans JP","Meiryo",sans-serif;margin:0;padding:24px;background:var(--bg);color:#0f172a}
+    h1{font-size:1.35rem;margin:0 0 12px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .container{max-width:1200px;margin:0 auto}
+
+    .layout{display:grid;grid-template-columns: 1fr;gap:16px}
+    @media(min-width:1024px){ .layout{grid-template-columns: 1fr 300px} }
+
+    .searchWrap{position:relative;max-width:520px;flex:1}
+    #searchBox{padding:10px 12px;width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}
+    #suggestList{position:absolute;top:100%;left:0;right:0;z-index:10;background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 8px 8px;max-height:300px;overflow:auto;display:none}
+    .suggestItem{padding:8px 12px;cursor:pointer}
+    .suggestItem[aria-selected="true"], .suggestItem:hover{background:#e2e8f0}
+
+    table{width:100%;border-collapse:collapse;margin-top:12px;background:var(--card);border-radius:12px;overflow:hidden}
+    th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+    thead th{background:#e2e8f0}
+    tfoot th, tfoot td{background:#f1f5f9;font-weight:600}
+    .pos{text-align:right;white-space:nowrap}
+    .change.pos{color:var(--pos)} .change.neg{color:var(--neg)}
+    .status{font-size:.75rem;display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:#111}
+    .status.lost{background:#f3f4f6}
+    .status.carry{background:#ecfeff;border-color:#bae6fd;color:#0369a1}
+    .status.adv{background:#fef3c7;border-color:#fde68a;color:#92400e}
+    .muted{color:var(--muted)}
+    #noResult{color:var(--muted);margin-top:8px}
+    .meta{font-size:.85rem;color:#64748b}
+    .panel{margin-top:12px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+
+    /* --- Ads (CPC向け) --- */
+    .ad-pill{font-size:.75rem;background:#fffbe6;border:1px solid #fde68a;color:#92400e;border-radius:999px;padding:2px 8px;margin-right:8px}
+    .ad-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;transition:transform .06s ease, box-shadow .06s ease}
+    .ad-card:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(2,6,23,.08)}
+    .ad-img{width:72px;height:72px;border-radius:8px;object-fit:cover;border:1px solid var(--line);background:#f1f5f9;flex:0 0 72px}
+    .ad-body{flex:1}
+    .ad-title{font-weight:700;margin:0 0 4px;line-height:1.3}
+    .ad-desc{font-size:.9rem;color:#334155;margin:0 0 8px}
+    .ad-cta{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid var(--accent);color:#fff;background:var(--accent);font-weight:600;text-decoration:none}
+    .ad-cta:hover{opacity:.92}
+    .ad-badge{font-size:.72rem;color:#0ea5e9;background:#ecfeff;border:1px solid #bae6fd;border-radius:999px;padding:2px 6px;margin-left:6px}
+
+    .ad-rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:12px;height:max-content}
+    .ad-inline{margin-top:16px}
+
+    /* Sticky bottom ad for mobile */
+    .ad-footer{position:fixed;left:12px;right:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;gap:10px;align-items:center;box-shadow:0 10px 30px rgba(2,6,23,.12);z-index:50}
+    .ad-footer .ad-img{width:48px;height:48px;flex:0 0 48px}
+    .ad-close{margin-left:auto;border:none;background:transparent;font-size:16px;cursor:pointer;line-height:1;color:#475569}
+    @media(min-width:1024px){ .ad-footer{display:none} }
+
+    /* a11y helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row" style="justify-content:space-between">
+      <h1 id="pageTitle" aria-live="polite">空売り残高</h1>
+      <div id="metaInfo" class="meta"></div>
+    </div>
+
+    <div class="layout">
+      <!-- Main -->
+      <main>
+        <div class="row" style="margin-bottom:8px">
+          <div class="searchWrap">
+            <label for="searchBox" class="sr-only">銘柄検索</label>
+            <input id="searchBox" value="" placeholder="証券コード・社名で検索…" autocomplete="off" aria-autocomplete="list" aria-controls="suggestList" aria-expanded="false" />
+            <div id="suggestList" role="listbox"></div>
+          </div>
+        </div>
+
+        <div id="noResult" style="display:none;">検索結果が見つかりませんでした。</div>
+
+        <table id="shortTable" style="display:none;">
+          <thead>
+            <tr>
+              <th style="min-width:160px">空売り機関名</th>
+              <th class="pos">前営業日残高(株)</th>
+              <th class="pos">残高(株)</th>
+              <th class="pos">前営業日比(株)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <th>合計</th>
+              <th class="pos" id="totalPrev"></th>
+              <th class="pos" id="totalPos"></th>
+              <th class="pos" id="totalChange"></th>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div id="datesPanel" class="panel" style="display:none"></div>
+
+        <!-- Inline CPC Ad -->
+        <div id="adInline" class="ad-inline"></div>
+
+        <div class="muted" style="margin-top:12px">
+          ※ 当サイトはデータ提供サイトであり、特定銘柄の売買推奨を行うものではありません。データの正確性・完全性は保証されません。投資判断はご自身の責任でお願いします。<br>
+          出典：JPX「空売りの残高に関する情報」等（公式公開後の数値を加工・可視化しています）
+        </div>
+      </main>
+
+      <!-- Right rail (sticky CPC Ad) -->
+      <aside class="ad-rail">
+        <div id="adRail"></div>
+        <div id="adRail2"></div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Mobile sticky footer ad -->
+  <div id="adFooter" class="ad-footer" style="display:none">
+    <img class="ad-img" src="" alt="広告">
+    <div class="ad-body">
+      <div><span class="ad-pill">広告</span><strong class="ad-title"></strong><span class="ad-badge">キャンペーン中</span></div>
+      <div class="ad-desc" style="font-size:.85rem"></div>
+    </div>
+    <a class="ad-cta" href="#" target="_blank" rel="nofollow sponsored noopener">詳細を見る</a>
+    <button class="ad-close" aria-label="広告を閉じる">✕</button>
+  </div>
+
+<script>
+/* ========= ユーティリティ ========= */
+const esc = (s='') => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const fmt = n => new Intl.NumberFormat('ja-JP').format(Number(n)||0);
+const kataToHira = s => s.replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0)-0x60));
+const zenkakuToHankaku = s => s.replace(/[！-～]/g, ch => String.fromCharCode(ch.charCodeAt(0)-0xFEE0));
+const norm = s => kataToHira(zenkakuToHankaku(String(s||'')).toLowerCase());
+const by = sel => document.querySelector(sel);
+
+/* ========= DOM ========= */
+const metaInfo = by('#metaInfo');
+const suggestions = by('#suggestList');
+const searchBox = by('#searchBox');
+const table = by('#shortTable');
+const tbody = table.querySelector('tbody');
+const totalPrev = by('#totalPrev');
+const totalPos = by('#totalPos');
+const totalChange = by('#totalChange');
+const noResult = by('#noResult');
+const datesPanel = by('#datesPanel');
+const pageTitle = by('#pageTitle');
+
+/* ========= データ ========= */
+let STOCKS = [];
+
+/* JSON ロード */
+async function loadJSON(){
+  const candidates = ['latest_short_update.json','latest_shorts.json','latest_short.json'];
+  let raw=null, src=null;
+  for(const p of candidates){
+    try{
+      const res = await fetch(`${p}?ts=${Date.now()}`, {cache:'no-store'});
+      if(res.ok){ raw = await res.json(); src=p; break; }
+    }catch(_e){}
+  }
+
+  if(!raw){
+    throw new Error('データ取得に失敗しました');
+  }
+
+  const arr = Array.isArray(raw) ? raw : (Array.isArray(raw.items) ? raw.items : []);
+  STOCKS = arr.map(s => ({
+    code: String(s.code||''),
+    name: s.name||'',
+    reading: s.reading || s.name || '',
+    shorts: Array.isArray(s.shorts)? s.shorts: [],
+    dates: Array.isArray(s.dates)? s.dates: [],
+    base_date: s.base_date || ''
+  }));
+
+  metaInfo.textContent = `銘柄: ${fmt(STOCKS.length)}件 `;
+}
+
+/* ========= サジェスト ========= */
+function showSuggestions(list){
+  if(list.length===0){
+    suggestions.style.display='none';
+    searchBox.setAttribute('aria-expanded','false');
+    return;
+  }
+  suggestions.innerHTML = list.slice(0,30).map(s =>
+    `<div class="suggestItem" role="option" data-code="${esc(s.code)}">${esc(s.code)}　${esc(s.name)}</div>`
+  ).join('');
+  suggestions.style.display='block';
+  searchBox.setAttribute('aria-expanded','true');
+}
+
+function updateSuggestions(term){
+  term = term.trim();
+  if(term.length < 1){
+    suggestions.style.display='none';
+    searchBox.setAttribute('aria-expanded','false');
+    return;
+  }
+  const q = norm(term);
+  const matches = STOCKS.filter(s => s.code.startsWith(q) || norm(s.name).includes(q) || norm(s.reading).startsWith(q));
+  showSuggestions(matches);
+}
+
+function findStock(code){ return STOCKS.find(s=>s.code===code); }
+
+/* ========= 日付パネル ========= */
+function renderDatesPanel(stock){
+  if(!stock?.dates?.length){ datesPanel.style.display='none'; datesPanel.innerHTML=''; return; }
+  datesPanel.style.display='block';
+
+  const base = getBaseDate(stock);
+  const note = base ? `` : '';
+  datesPanel.innerHTML = `<div class="muted">最新データ内訳 ${note}</div>`;
+
+  stock.dates.forEach(d=>{
+    const adv = !!d.is_advanced;
+    const header = `<strong>${esc(d.date||'—')}</strong> <span class="muted">　合計: ${fmt(d.total)}${adv?'（集計外）':''}</span>`;
+    const items = (d.items||[]).map(x=>`<li>${esc(x.name)} ${fmt(x.position)}</li>`).join('');
+    datesPanel.insertAdjacentHTML('beforeend',
+      `<div style="margin-top:6px;padding:8px 12px;border:1px solid #cbd5e1;border-radius:8px;background:#fff">
+        <div>${header}</div>
+        <ul style="margin:6px 0 0; padding-left:18px">${items}</ul>
+      </div>`
+    );
+  });
+}
+
+/* ========= 見出し/base日付 ========= */
+function getBaseDate(stock){
+  if(stock.base_date) return stock.base_date;
+  const ds = (stock.dates||[]).map(x=>x.date).filter(Boolean).sort(); // 文字列YYYY/MM/DD想定
+  return ds.length ? ds[ds.length-1] : '';
+}
+
+function updatePageTitleFor(stock){
+  const base = getBaseDate(stock) || '—';
+  pageTitle.textContent = `${base}の空売り残高`;
+  document.title = `${stock.code} ${stock.name} | ${pageTitle.textContent}`;
+}
+
+/* ========= テーブル描画 ========= */
+function renderStock(stock){
+  if(!stock){ table.style.display='none'; noResult.style.display='block'; datesPanel.style.display='none'; return; }
+  noResult.style.display='none'; table.style.display='table'; tbody.innerHTML='';
+
+  updatePageTitleFor(stock);
+
+  const showLost = false;    // 報告義務消失は表示しない
+  const showAdv  = false;    // 翌日報告は表示しない
+  const dimCarry = false;    // 据え置きを薄くしない
+
+  const rows = (stock.shorts||[])
+    .filter(d => showLost || d.status!=="reporting_lost")
+    .filter(d => showAdv ? true : !d.is_advanced)
+    .map(d => ({
+      name: (d.name && d.name!=="nan") ? d.name : '不明（要確認）',
+      status: d.status||'normal',
+      isAdv: !!d.is_advanced,
+      pos: Number(d.position)||0,
+      ch: Number(d.change)||0,
+      prev: (Number(d.position)||0) - (Number(d.change)||0),
+      calc_date: d.calc_date || ''
+    }));
+
+  let sumPrev=0, sumPos=0, sumCh=0;
+  for(const r of rows){
+    const delta = (r.ch>=0?'+':'') + fmt(r.ch);
+    const changeCls = r.ch>=0 ? 'pos' : 'neg';
+    const faded = (dimCarry && r.status==='carried_forward') ? 'opacity:.6' : '';
+    tbody.insertAdjacentHTML('beforeend',
+      `<tr style="${faded}">
+        <td>${esc(r.name)} ${statusBadge(r.status, r.isAdv)} ${r.calc_date?`<span class="muted">（${esc(r.calc_date)}）</span>`:''}</td>
+        <td class="pos">${fmt(r.prev)}</td>
+        <td class="pos">${fmt(r.pos)}</td>
+        <td class="pos change ${changeCls}">${delta}</td>
+      </tr>`
+    );
+    sumPrev+=r.prev; sumPos+=r.pos; sumCh+=r.ch;
+  }
+
+  totalPrev.textContent = fmt(sumPrev);
+  totalPos.textContent = fmt(sumPos);
+  totalChange.textContent = `${sumCh>=0?'+':''}${fmt(sumCh)}`;
+
+  renderDatesPanel(stock);
+
+  // 広告（本文中）を再生成
+  renderInlineAd();
+}
+
+/* バッジ */
+function statusBadge(status, isAdv){
+  if(isAdv) return '';
+  if(status==='reporting_lost') return '<span class="status lost">報告義務消失</span>';
+  if(status==='carried_forward') return '<span class="status carry">据え置き</span>';
+  return '';
+}
+
+/* ========= イベント（IME対応版） ========= */
+let isComposing = false;
+
+// IME開始/終了を追跡
+searchBox.addEventListener('compositionstart', () => { isComposing = true; });
+searchBox.addEventListener('compositionend', (e) => {
+  isComposing = false;
+  updateSuggestions(e.target.value); // 確定後に最新文字列でサジェスト更新
+});
+
+// 入力：IME中の中間文字ではサジェストを更新しない
+searchBox.addEventListener('input', (e) => {
+  if (isComposing || e.isComposing) return;
+  updateSuggestions(e.target.value);
+});
+
+// Enter：IME変換中のEnterは無視（keyCode=229は一部ブラウザの変換中判定）
+searchBox.addEventListener('keydown', (e) => {
+  if (isComposing || e.isComposing || e.keyCode === 229) return;
+
+  if (e.key === 'Enter') {
+    e.preventDefault();
+
+    const first = suggestions.querySelector('.suggestItem');
+    if (first) {
+      const code = first.dataset.code;
+      const st = findStock(code);
+      searchBox.value = `${code} ${st?.name||''}`.trim();
+      suggestions.style.display='none';
+      renderStock(st);
+      return;
+    }
+
+    const q = norm(searchBox.value||'');
+    if (q) {
+      const st = STOCKS.find(s => s.code.startsWith(q) || norm(s.name).includes(q) || norm(s.reading).startsWith(q));
+      if (st) {
+        searchBox.value = `${st.code} ${st.name}`.trim();
+        suggestions.style.display='none';
+        renderStock(st);
+      } else {
+        noResult.style.display='block';
+      }
+    }
+  }
+});
+
+// クリック系
+document.addEventListener('click', e=>{
+  if(e.target.closest('#suggestList')){
+    const item = e.target.closest('.suggestItem'); if(!item) return;
+    const code = item.dataset.code;
+    const st = findStock(code);
+    searchBox.value = `${code} ${st?.name||''}`.trim();
+    suggestions.style.display='none';
+    renderStock(st);
+  } else if(!e.target.closest('.searchWrap')){
+    suggestions.style.display='none';
+  }
+});
+
+/* ========= 広告（CPC） ========= */
+const ADS = [
+  {
+    title: '広告枠',
+    desc: '広告枠。',
+    img: 'https://via.placeholder.com/144',
+    href: 'https://example.com/sbi'
+  },
+  {
+    title: '広告枠',
+    desc: '広告枠',
+    img: 'https://via.placeholder.com/144?text=Tool',
+    href: 'https://example.com/tool'
+  },
+  {
+    title: '広告枠',
+    desc: '広告枠',
+    img: 'https://via.placeholder.com/144?text=Pro',
+    href: 'https://example.com/pro'
+  }
+];
+
+function withUtm(url, where){
+  const u = new URL(url, location.href);
+  u.searchParams.set('utm_source','shorts');
+  u.searchParams.set('utm_medium', where);
+  u.searchParams.set('utm_campaign','cpc');
+  u.searchParams.set('ts', Date.now());
+  return u.toString();
+}
+
+function adCardHTML(ad, where){
+  const href = withUtm(ad.href, where);
+  return `
+    <a class="ad-card" href="${esc(href)}" target="_blank" rel="nofollow sponsored noopener" data-where="${esc(where)}">
+      <img class="ad-img" src="${esc(ad.img)}" alt="広告">
+      <div class="ad-body">
+        <p class="ad-title"><span class="ad-pill">広告</span>${esc(ad.title)} <span class="ad-badge">キャンペーン中</span></p>
+        <p class="ad-desc">${esc(ad.desc)}</p>
+        <span class="ad-cta" aria-label="詳細を見る（新しいタブ）">詳細を見る ▶</span>
+      </div>
+    </a>
+  `;
+}
+
+function pickAds(n=1){
+  const arr = ADS.slice();
+  arr.sort(()=>Math.random()-0.5);
+  return arr.slice(0,n);
+}
+
+function renderRailAds(){
+  const rail = by('#adRail');
+  const rail2 = by('#adRail2');
+  rail.innerHTML = adCardHTML(pickAds(1)[0], 'rail-1');
+  rail2.innerHTML = adCardHTML(pickAds(1)[0], 'rail-2');
+}
+
+function renderInlineAd(){
+  const inline = by('#adInline');
+  inline.innerHTML = adCardHTML(pickAds(1)[0], 'inline-1');
+}
+
+function renderFooterAd(){
+  const ad = pickAds(1)[0];
+  const wrap = by('#adFooter');
+  wrap.querySelector('.ad-img').src = ad.img;
+  wrap.querySelector('.ad-title').textContent = ad.title;
+  wrap.querySelector('.ad-desc').textContent = ad.desc;
+  wrap.querySelector('.ad-cta').href = withUtm(ad.href,'footer');
+  wrap.style.display = 'flex';
+  wrap.querySelector('.ad-close').addEventListener('click', ()=>{ wrap.style.display='none'; }, {once:true});
+}
+
+/* クリック計測フック（必要に応じて置換：GA/Tag Manager等） */
+function trackAdClick(where, href){
+  // ここで計測送信に差し替え（例：gtag('event','ad_click',{where,href});）
+  console.debug('[ad_click]', where, href);
+}
+
+document.addEventListener('click', e=>{
+  const a = e.target.closest('.ad-card, .ad-footer .ad-cta');
+  if(!a) return;
+  const where = a.dataset.where || 'footer';
+  const href = a.href;
+  trackAdClick(where, href);
+});
+
+/* ========= 起動 ========= */
+(async function init(){
+  try{
+    await loadJSON();
+    renderRailAds();
+    renderInlineAd();
+    renderFooterAd(); // モバイルのみ表示
+  }catch(e){
+    noResult.style.display='block';
+    noResult.textContent = 'JSON 読み込み失敗: '+e.message;
+  }
+})();
+</script>
+</body>
+</html>
