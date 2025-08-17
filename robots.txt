@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pipy.github.io/shorts-viewer/sitemap.xml
