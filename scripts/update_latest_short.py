@@ -20,10 +20,7 @@ TIMEOUT = 25
 
 
 def find_latest_xls_on_index() -> tuple[str, str] | None:
-    """
-    Crawl the JPX short-selling index page and pick the latest *_Short_Positions.xls.
-    Returns (YYYYMMDD, absolute_url) or None.
-    """
+    """Return (YYYYMMDD, absolute_url) for the latest *_Short_Positions.xls or None."""
     r = requests.get(INDEX_URL, headers=HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "lxml")
@@ -74,10 +71,7 @@ def to_hiragana_if_possible(s: str) -> str:
 
 
 def normalize_reading(json_path: Path) -> None:
-    """
-    Ensure each item has a 'reading' in hiragana.
-    If pykakasi is not installed, this becomes a no-op.
-    """
+    """Ensure each item has 'reading' in hiragana (no-op if pykakasi missing)."""
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -112,7 +106,14 @@ def main():
     print(f"ダウンロード完了: {xls_path}")
 
     # 4) Convert & merge using core logic
-    from scripts.update_core import update_with_xls
+    try:
+        # preferred when running as module (python -m scripts.update_latest_short)
+        from scripts.update_core import update_with_xls  # type: ignore
+    except ModuleNotFoundError:
+        # fallback when executed directly (python scripts/update_latest_short.py)
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from update_core import update_with_xls  # type: ignore
 
     tmp_json = BASE_DIR / "_latest_shorts.tmp.json"
     prev_json = DATA_JSON if DATA_JSON.exists() else DATA_JSON  # same path OK for first run
