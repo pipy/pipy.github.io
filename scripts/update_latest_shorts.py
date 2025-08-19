@@ -15,7 +15,7 @@ INDEX_URL = "https://www.jpx.co.jp/markets/public/short-selling/index.html"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; JPXShortDownloader/1.0)"}
 TIMEOUT = 20
 
-def find_latest_xls_on_index() -> tuple[str, str] | None:
+def find_latest_xls_on_index():
     """JPXインデックスから一番新しい *_Short_Positions.xls を (date_str, url) で返す"""
     r = requests.get(INDEX_URL, headers=HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
@@ -83,9 +83,8 @@ def main():
     date_str, url = found
     print(f"最新検出: {date_str} -> {url}")
 
-    # 2) すでに latest_shorts.json 内に同日のデータが入っていればスキップ（軽い重複抑止）
+    # 2) すでに latest_shorts.json に同日の文字列が含まれていればヒント表示（重複抑止）
     existing_text = DATA_JSON.read_text("utf-8") if DATA_JSON.exists() else ""
-    # 軽く日時文字列の有無だけ見る（厳密な比較は生成後に git diff で担保）
     if date_str in existing_text:
         print(f"ヒント: {date_str} は JSON 内に既出の可能性があります（処理は継続）。")
 
@@ -93,21 +92,20 @@ def main():
     xls_path = download(url, DOWNLOADS)
     print(f"ダウンロード完了: {xls_path}")
 
-    # 4) 変換＆マージ（あなたの高機能ロジックを呼ぶ）
+    # 4) 変換＆マージ
     from scripts.update_core import update_with_xls
 
     tmp_json = BASE_DIR / "_latest_shorts.tmp.json"
     prev_json = DATA_JSON if DATA_JSON.exists() else DATA_JSON  # 初回も同じパスでOK
     update_with_xls(str(prev_json), str(xls_path), str(tmp_json))
 
-    # 5) 差分がなければ終了 / あれば読み仮名正規化して本番ファイルへ
+    # 5) 差分判定 → 反映
     new_text = tmp_json.read_text("utf-8")
     if new_text.strip() == existing_text.strip():
         print("内容に変化なし（コミット不要）")
         tmp_json.unlink(missing_ok=True)
         return
 
-    # 読み仮名の正規化（pykakasi が入っていれば適用）
     shutil.move(str(tmp_json), str(DATA_JSON))
     normalize_reading(DATA_JSON)
     print(f"更新完了: {DATA_JSON}")
