@@ -1,31 +1,22 @@
 # -*- coding: utf-8 -*-
 """
-日次更新スクリプト（翌日報告は銘柄別・複数日を shorts に別行で出力・2日分保持）
+日次更新コアロジック（副作用なし）
 - 基準日＝銘柄ごとに当日XLS内の最小日
 - 翌日報告 (is_advanced=True) は合計外、基準日 (False) と据え置きは合計に含める
 - 同一機関でも日付ごとに shorts に1行（= 2日出ていれば2行）
-- “翌日しかXLSに無い”機関は、前回JSONの dates から基準日を補完して2本揃える
-- dates は前回＋今回で新しい順に最大2日保持
+- “翌日しかXLSに無い”機関は前回JSONの dates から基準日を補完して2本揃える
+- dates は前回＋今回で新しい順に最大 KEEP_DATES_N 日保持
 依存: pandas, xlrd
 """
 
-import json, os, re, unicodedata
+import os, re, unicodedata, json
 from collections import defaultdict
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple
 import pandas as pd
 
-# ====== 設定（環境に合わせて変更） ======
-PREV_JSON = "/Users/masaki/shorts/latest_shorts.json"            # 前回JSON（latest_short.json でもOK）
-CURR_XLS  = "/Users/masaki/shorts/20250815_Short_Positions.xls"  # 当日XLS
-OUT_JSON  = "/Users/masaki/shorts/latest_short_update.json"      # 出力JSON
-
-# 生成後に latest_shorts.json に置き換える場合 True
-DO_REPLACE_AFTER = False
-REPLACE_PATH = "/Users/masaki/shorts/latest_shorts.json"
-
-# しきい値など
-RATIO_THRESHOLD = 0.5   # % 未満で報告義務消失（タグ付けのみ。数量は潰さない）
-KEEP_DATES_N    = 2     # dates は常に最大2日保持
+# 環境変数で調整可能（未設定なら既定値）
+RATIO_THRESHOLD = float(os.getenv("RATIO_THRESHOLD", 0.5))  # % 未満で reporting_lost
+KEEP_DATES_N    = int(os.getenv("KEEP_DATES_N", 2))        # dates の保持日数
 
 # ====== ユーティリティ ======
 def nfkc(s: str) -> str:
@@ -165,7 +156,8 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
                 cur_by_csd[key]["ratio"] = (cur_by_csd[key]["ratio"] + float(r.ratio)) / 2.0
 
     # 当日XLSの日付別内訳（dates）
-    dates_by_code_curr = defaultdict(lambda: defaultdict(lambda: {"date": None, "items": [], "total": 0}))
+    from collections import defaultdict as _dd
+    dates_by_code_curr = _dd(lambda: _dd(lambda: {"date": None, "items": [], "total": 0}))
     g = curr_df.groupby(["code","calc_date","seller"], as_index=False).agg(position=("position","sum"))
     for r in g.itertuples(index=False):
         code = str(r.code)
@@ -201,14 +193,14 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
             }
 
     # ---- shorts を作成（(code,seller,date) ごと）----
-    # まず、当日XLSに出ている (code, seller) について、その銘柄の全日付を昇順で並べる
     cs_dates_map = defaultdict(list)  # (code, seller)-> [date1<date2<...]
+
     for (code, seller, dstr) in cur_by_csd.keys():
         cs_dates_map[(code, seller)].append(dstr)
     for k in cs_dates_map:
         cs_dates_map[k] = sorted(cs_dates_map[k], key=lambda x: pd.to_datetime(x))
 
-    # ★★★ 追加: “翌日だけ出た機関”に前日（基準日）行を補完して2本揃える
+    # “翌日だけ出た機関”に前日（基準日）行を補完
     for (code, seller), dates in list(cs_dates_map.items()):
         base_ts = base_ts_by_code.get(code)
         if base_ts is None:
@@ -220,17 +212,14 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
                 continue
             pos0 = None
             for it in base_blk.get("items", []):
-                # namesはNFKCで比較
                 if nfkc(it.get("name","")) == seller:
                     pos0 = int(it.get("position", 0))
                     break
             if pos0 is None:
                 continue
-            # 補完 (code, seller, base_date)
             cur_by_csd[(code, seller, base_date)] = {"position": pos0, "ratio": None}
             cs_dates_map[(code, seller)].append(base_date)
             cs_dates_map[(code, seller)] = sorted(cs_dates_map[(code, seller)], key=lambda x: pd.to_datetime(x))
-    # ★★★ 追加ここまで
 
     result_by_code: Dict[str, Dict] = {}
     def ensure_stock(code: str):
@@ -247,7 +236,7 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
     for (code, seller), dates in sorted(cs_dates_map.items()):
         base_ts = base_ts_by_code.get(code)
         prev_pos = prev_pos_by_cs.get((code, seller), 0)
-        last_day_pos = None  # 翌日以降の change 計算用
+        last_day_pos = None
 
         for dstr in dates:
             cur = cur_by_csd[(code, seller, dstr)]
@@ -255,11 +244,10 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
             ratio = cur["ratio"]
 
             if last_day_pos is None:
-                change = cur_pos - prev_pos           # 基準日(最初の日)
+                change = cur_pos - prev_pos
             else:
-                change = cur_pos - last_day_pos       # 翌日以降
+                change = cur_pos - last_day_pos
 
-            # is_advanced（銘柄別基準日より後なら True）
             is_adv = False
             if base_ts is not None:
                 try:
@@ -287,7 +275,7 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
 
             last_day_pos = cur_pos
 
-    # 2) 据え置き：当日に1行も無い (code, seller) を追加
+    # 2) 据え置き：当日に1行も無い (code, seller)
     all_cs_today = {(c,s) for (c,s,_) in cur_by_csd.keys()}
     for (code, seller), prev_pos in prev_pos_by_cs.items():
         if (code, seller) in all_cs_today:
@@ -306,17 +294,16 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
             "is_advanced": False
         })
 
-    # 並び：同銘柄内で position 降順・calc_date 昇順で安定化
+    # 並び：同銘柄内で position 降順・calc_date 昇順
     for code, s in result_by_code.items():
         s["shorts"].sort(key=lambda x: (-(x["position"]), x["calc_date"] or ""))
 
-    # ---- dates を「前回＋今回」で最大2日分に保つ（銘柄ごと）----
+    # ---- dates を「前回＋今回」で最大 KEEP_DATES_N 日に保つ ----
     def is_adv_per_code(code: str, date_str: str) -> bool:
         base_ts = base_ts_by_code.get(code)
         if base_ts is None: return False
         return pd.to_datetime(date_str).normalize() > base_ts
 
-    # 当日/前回どちらかに出た銘柄すべて
     codes_in_scope = set(result_by_code.keys()) | set(prev_dates_by_code.keys()) | set(dates_by_code_curr.keys())
 
     for code in sorted(codes_in_scope):
@@ -356,37 +343,18 @@ def update_with_xls(prev_json_path: str, curr_xls_path: str, out_json_path: str)
 
     # 出力
     result = [result_by_code[c] for c in sorted(result_by_code.keys())]
-    os.makedirs(os.path.dirname(out_json_path), exist_ok=True)
+    os.makedirs(os.path.dirname(out_json_path) or ".", exist_ok=True)
     with open(out_json_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     print(f"✅ 更新JSON: {out_json_path}  銘柄: {len(result)}")
 
-    # 任意: latest_shorts.json に置き換え
-    if DO_REPLACE_AFTER:
-        try:
-            if os.path.exists(REPLACE_PATH):
-                os.remove(REPLACE_PATH)
-                print(f"削除: {REPLACE_PATH}")
-            os.rename(out_json_path, REPLACE_PATH)
-            print(f"リネーム: {out_json_path} → {REPLACE_PATH}")
-        except Exception as e:
-            print(f"⚠️ 置き換えに失敗しました: {e}")
 
-# ====== 実行 ======
 if __name__ == "__main__":
-    update_with_xls(PREV_JSON, CURR_XLS, OUT_JSON)
-
-import os
-
-# 元ファイルとリネーム先のパス
-src = "/Users/masaki/shorts/latest_short_update.json"
-dst = "/Users/masaki/shorts/latest_shorts.json"
-
-# 既存の latest_shorts.json を削除
-if os.path.exists(dst):
-    os.remove(dst)
-    print(f"削除: {dst}")
-
-# src を dst にリネーム
-os.rename(src, dst)
-print(f"リネーム完了: {src} → {dst}")
+    # ローカル実行用（Actions からは使わない）
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--prev", required=True, help="前回 JSON（latest_shorts.json）")
+    p.add_argument("--xls",  required=True, help="当日 XLS")
+    p.add_argument("--out",  required=True, help="出力 JSON")
+    args = p.parse_args()
+    update_with_xls(args.prev, args.xls, args.out)
