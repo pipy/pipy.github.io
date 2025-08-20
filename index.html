@@ -68,7 +68,7 @@
 <body>
   <div class="container">
     <div class="row" style="justify-content:space-between">
-      <h1 id="pageTitle" aria-live="polite">空売り残高</h1>
+      <h1 id="pageTitle" aria-live="polite">機関空売り残高 viewr</h1>
       <div id="metaInfo" class="meta"></div>
     </div>
 
@@ -167,10 +167,12 @@ function getQueryCode(){
   const u = new URL(location.href);
   return (u.searchParams.get('q')||'').trim();
 }
-function setQueryCode(code){
+function setQueryCode(code, mode='push'){
   const u = new URL(location.href);
   if(code) u.searchParams.set('q', code); else u.searchParams.delete('q');
-  history.replaceState(null, '', u.toString());
+  const state = { q: code || '' };
+  if(mode === 'push') history.pushState(state, '', u.toString());
+  else history.replaceState(state, '', u.toString());
 }
 function saveLastCode(code){
   if(code) localStorage.setItem(LS_KEY, code); else localStorage.removeItem(LS_KEY);
@@ -327,6 +329,14 @@ function statusBadge(status, isAdv){
 /* ========= 検索選択の適用（URL/LS更新を一括） ========= */
 function applySelection(stock){
   if(!stock){ return; }
+  // URLとlocalStorageに選択コードを保存（pushStateで履歴を積む）
+  setQueryCode(stock.code, 'push');
+  saveLastCode(stock.code);
+  // 入力欄も整形
+  searchBox.value = `${stock.code} ${stock.name}`.trim();
+  // レンダリング
+  renderStock(stock);
+}
   // URLとlocalStorageに選択コードを保存
   setQueryCode(stock.code);
   saveLastCode(stock.code);
@@ -338,6 +348,16 @@ function applySelection(stock){
 
 /* ========= イベント（IME対応版） ========= */
 let isComposing = false;
+
+// ホーム状態に戻す（メイン画面）
+function clearSelection({push=true}={}){
+  if(push) setQueryCode('', 'push'); else setQueryCode('', 'replace');
+  saveLastCode('');
+  searchBox.value = '';
+  table.style.display='none';
+  datesPanel.style.display='none';
+  noResult.style.display='block';
+}
 
 // IME開始/終了を追跡
 searchBox.addEventListener('compositionstart', () => { isComposing = true; });
@@ -352,12 +372,19 @@ searchBox.addEventListener('input', (e) => {
   updateSuggestions(e.target.value);
 });
 
-// Enter：候補があれば先頭、なければ曖昧検索の最初を採用
+// Enter：候補があれば先頭、なければ曖昧検索の最初を採用。空ならホームに戻す
 searchBox.addEventListener('keydown', (e) => {
   if (isComposing || e.isComposing || e.keyCode === 229) return;
 
   if (e.key === 'Enter') {
     e.preventDefault();
+
+    // 空Enterはホームへ
+    if (!searchBox.value.trim()) {
+      suggestions.style.display='none';
+      clearSelection({push:true});
+      return;
+    }
 
     const first = suggestions.querySelector('.suggestItem');
     if (first) {
@@ -485,18 +512,24 @@ document.addEventListener('click', e=>{
     }
 
     // 戻る/進むで q が変わったら再描画
-    window.addEventListener('popstate', () => {
-      const q = getQueryCode();
-      if(!q){
-        searchBox.value = '';
-        table.style.display='none';
-        datesPanel.style.display='none';
-        noResult.style.display='block';
-        return;
-      }
-      const st = findStock(q) || STOCKS.find(s=>s.code.startsWith(q));
-      if(st){ applySelection(st); }
-    });
+    window.addEventListener('popstate', (ev) => {
+  const stateQ = ev.state && typeof ev.state.q === 'string' ? ev.state.q : null;
+  const q = stateQ !== null ? stateQ : getQueryCode();
+  if(!q){
+    clearSelection({push:false}); // 置換で表示だけ更新
+    return;
+  }
+  const st = findStock(q) || STOCKS.find(s=>s.code.startsWith(q));
+  if(st){
+    // 履歴からの復元時はURLは既に反映済みなので replace
+    setQueryCode(st.code, 'replace');
+    saveLastCode(st.code);
+    searchBox.value = `${st.code} ${st.name}`.trim();
+    renderStock(st);
+  } else {
+    clearSelection({push:false});
+  }
+});
 
   }catch(e){
     noResult.style.display='block';
