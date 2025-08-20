@@ -492,21 +492,23 @@ document.addEventListener('click', e=>{
     renderInlineAd();
     renderFooterAd(); // モバイルのみ表示
 
-    // 初期選択：URLの ?q=XXXX → 無ければ localStorage → 何もなければ未選択
+    // 初期選択：URLの ?q=XXXX がある時だけ復元（localStorageは使わない）
     const urlCode = getQueryCode();
-    const lsCode = restoreLastCode();
-    const code = urlCode || lsCode || '';
-    if(code){
-      const st = findStock(code) || STOCKS.find(s=>s.code.startsWith(code));
-      if(st){
-        // 初期表示は履歴を増やさず置換
-        setQueryCode(st.code, 'replace');
-        saveLastCode(st.code);
+    if (urlCode) {
+      const st = findStock(urlCode) || STOCKS.find(s => s.code.startsWith(urlCode));
+      if (st) {
+        // URLは既に?q=...なので変えず、stateだけ整える
+        history.replaceState({ q: st.code }, '', location.href);
         searchBox.value = `${st.code} ${st.name}`.trim();
         renderStock(st);
+      } else {
+        clearSelection({ push: false });
       }
     } else {
-      clearSelection({push:false});
+      // （任意）見た目だけ、前回コードを入力欄にプリフィルするが表示はしない
+      const last = restoreLastCode();
+      if (last) searchBox.value = last;
+      clearSelection({ push: false });
     }
 
     // 戻る/進むで q が変わったら復元
