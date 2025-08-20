@@ -136,6 +136,7 @@
   </div>
 
 <script>
+<script>
 /* ========= ユーティリティ ========= */
 const esc = (s='') => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
 const fmt = n => new Intl.NumberFormat('ja-JP').format(Number(n)||0);
@@ -167,10 +168,12 @@ function getQueryCode(){
   const u = new URL(location.href);
   return (u.searchParams.get('q')||'').trim();
 }
-function setQueryCode(code){
+function setQueryCode(code, mode='push'){
   const u = new URL(location.href);
   if(code) u.searchParams.set('q', code); else u.searchParams.delete('q');
-  history.replaceState(null, '', u.toString());
+  const state = { q: code || '' };
+  if(mode === 'push') history.pushState(state, '', u.toString());
+  else history.replaceState(state, '', u.toString());
 }
 function saveLastCode(code){
   if(code) localStorage.setItem(LS_KEY, code); else localStorage.removeItem(LS_KEY);
@@ -327,13 +330,22 @@ function statusBadge(status, isAdv){
 /* ========= 検索選択の適用（URL/LS更新を一括） ========= */
 function applySelection(stock){
   if(!stock){ return; }
-  // URLとlocalStorageに選択コードを保存
-  setQueryCode(stock.code);
+  // 検索確定：履歴を積む（pushState）
+  setQueryCode(stock.code, 'push');
   saveLastCode(stock.code);
-  // 入力欄も整形
   searchBox.value = `${stock.code} ${stock.name}`.trim();
-  // レンダリング
   renderStock(stock);
+}
+
+/* ========= ホーム状態（未選択）に戻す ========= */
+function clearSelection({push=false}={}){
+  setQueryCode('', push ? 'push' : 'replace');
+  saveLastCode('');
+  searchBox.value = '';
+  table.style.display='none';
+  datesPanel.style.display='none';
+  noResult.style.display='block';
+  document.title = '機関空売り残高viewer';
 }
 
 /* ========= イベント（IME対応版） ========= */
@@ -343,7 +355,7 @@ let isComposing = false;
 searchBox.addEventListener('compositionstart', () => { isComposing = true; });
 searchBox.addEventListener('compositionend', (e) => {
   isComposing = false;
-  updateSuggestions(e.target.value); // 確定後に最新文字列でサジェスト更新
+  updateSuggestions(e.target.value);
 });
 
 // 入力：IME中の中間文字ではサジェストを更新しない
@@ -352,12 +364,19 @@ searchBox.addEventListener('input', (e) => {
   updateSuggestions(e.target.value);
 });
 
-// Enter：候補があれば先頭、なければ曖昧検索の最初を採用
+// Enter：候補があれば先頭、なければ曖昧検索の最初。空Enterはホームへ
 searchBox.addEventListener('keydown', (e) => {
   if (isComposing || e.isComposing || e.keyCode === 229) return;
 
   if (e.key === 'Enter') {
     e.preventDefault();
+
+    // 空Enterはホームへ（履歴にホームを積む）
+    if (!searchBox.value.trim()) {
+      suggestions.style.display='none';
+      clearSelection({push:true});
+      return;
+    }
 
     const first = suggestions.querySelector('.suggestItem');
     if (first) {
@@ -382,7 +401,7 @@ searchBox.addEventListener('keydown', (e) => {
 });
 
 // サジェストクリック
-Document.prototype.addEventListener.call(document,'click', (e)=>{
+document.addEventListener('click', (e)=>{
   if(e.target.closest('#suggestList')){
     const item = e.target.closest('.suggestItem'); if(!item) return;
     const code = item.dataset.code;
@@ -455,7 +474,6 @@ function renderFooterAd(){
 
 /* クリック計測フック（必要に応じて置換：GA/Tag Manager等） */
 function trackAdClick(where, href){
-  // ここで計測送信に差し替え（例：gtag('event','ad_click',{where,href});）
   console.debug('[ad_click]', where, href);
 }
 
@@ -481,21 +499,35 @@ document.addEventListener('click', e=>{
     const code = urlCode || lsCode || '';
     if(code){
       const st = findStock(code) || STOCKS.find(s=>s.code.startsWith(code));
-      if(st){ applySelection(st); }
+      if(st){
+        // 初期表示は履歴を増やさず置換
+        setQueryCode(st.code, 'replace');
+        saveLastCode(st.code);
+        searchBox.value = `${st.code} ${st.name}`.trim();
+        renderStock(st);
+      }
+    } else {
+      clearSelection({push:false});
     }
 
-    // 戻る/進むで q が変わったら再描画
-    window.addEventListener('popstate', () => {
-      const q = getQueryCode();
+    // 戻る/進むで q が変わったら復元
+    window.addEventListener('popstate', (ev) => {
+      const stateQ = ev.state && typeof ev.state.q === 'string' ? ev.state.q : null;
+      const q = stateQ !== null ? stateQ : getQueryCode();
       if(!q){
-        searchBox.value = '';
-        table.style.display='none';
-        datesPanel.style.display='none';
-        noResult.style.display='block';
+        clearSelection({push:false});
         return;
       }
       const st = findStock(q) || STOCKS.find(s=>s.code.startsWith(q));
-      if(st){ applySelection(st); }
+      if(st){
+        // 履歴復元なので replace（履歴は増やさない）
+        setQueryCode(st.code, 'replace');
+        saveLastCode(st.code);
+        searchBox.value = `${st.code} ${st.name}`.trim();
+        renderStock(st);
+      }else{
+        clearSelection({push:false});
+      }
     });
 
   }catch(e){
@@ -506,5 +538,3 @@ document.addEventListener('click', e=>{
 </script>
 </body>
 </html>
-
-このコードで、検索後、戻るボタン押しても、検索前のメイン画面に戻らない。 戻るボタンで、検索前の画面または、前に検索した画面に戻るようにできますか？これってgithubpagesでできる？
