@@ -341,12 +341,14 @@ function applySelection(stock){
 /* ========= ホーム状態（未選択）に戻す ========= */
 function clearSelection({push=false}={}){
   setQueryCode('', push ? 'push' : 'replace');
-  saveLastCode('');
+  // 前回検索は残しても/消してもOK。残すなら以下行はコメントアウトしても良い
+  // saveLastCode('');
   searchBox.value = '';
   table.style.display='none';
   datesPanel.style.display='none';
-  noResult.style.display='block';
-  document.title = '機関空売り残高viewer';
+  noResult.style.display='none';         // ← 初期表示は非表示に
+  pageTitle.textContent = '空売り残高';
+  document.title = '機関空売り残高 viewer';
 }
 
 /* ========= イベント（IME対応版） ========= */
