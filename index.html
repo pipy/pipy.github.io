@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>機関空売り残高viwer</title>
+  <title>機関空売り残高viewer</title>
   <link rel="canonical" href="https://pipy.github.io/shorts-viewer/">
   <meta property="og:url" content="https://pipy.github.io/shorts-viewer/">
   <meta name="description" content="JPX翌日報告対応の空売り残高ビューア。銘柄ごとの前日比推移を素早くチェック。">
@@ -160,20 +160,36 @@ const pageTitle = by('#pageTitle');
 /* ========= データ ========= */
 let STOCKS = [];
 
-/* JSON ロード */
+/* ========= 検索状態の保持（URL & localStorage） ========= */
+const LS_KEY = 'shorts_last_query_code';
+
+function getQueryCode(){
+  const u = new URL(location.href);
+  return (u.searchParams.get('q')||'').trim();
+}
+function setQueryCode(code){
+  const u = new URL(location.href);
+  if(code) u.searchParams.set('q', code); else u.searchParams.delete('q');
+  history.replaceState(null, '', u.toString());
+}
+function saveLastCode(code){
+  if(code) localStorage.setItem(LS_KEY, code); else localStorage.removeItem(LS_KEY);
+}
+function restoreLastCode(){
+  return localStorage.getItem(LS_KEY)||'';
+}
+
+/* ========= JSON ロード ========= */
 async function loadJSON(){
   const candidates = ['latest_short_update.json','latest_shorts.json','latest_short.json'];
-  let raw=null, src=null;
+  let raw=null;
   for(const p of candidates){
     try{
       const res = await fetch(`${p}?ts=${Date.now()}`, {cache:'no-store'});
-      if(res.ok){ raw = await res.json(); src=p; break; }
+      if(res.ok){ raw = await res.json(); break; }
     }catch(_e){}
   }
-
-  if(!raw){
-    throw new Error('データ取得に失敗しました');
-  }
+  if(!raw) throw new Error('データ取得に失敗しました');
 
   const arr = Array.isArray(raw) ? raw : (Array.isArray(raw.items) ? raw.items : []);
   STOCKS = arr.map(s => ({
@@ -184,7 +200,6 @@ async function loadJSON(){
     dates: Array.isArray(s.dates)? s.dates: [],
     base_date: s.base_date || ''
   }));
-
   metaInfo.textContent = `銘柄: ${fmt(STOCKS.length)}件 `;
 }
 
@@ -241,7 +256,7 @@ function renderDatesPanel(stock){
 /* ========= 見出し/base日付 ========= */
 function getBaseDate(stock){
   if(stock.base_date) return stock.base_date;
-  const ds = (stock.dates||[]).map(x=>x.date).filter(Boolean).sort(); // 文字列YYYY/MM/DD想定
+  const ds = (stock.dates||[]).map(x=>x.date).filter(Boolean).sort();
   return ds.length ? ds[ds.length-1] : '';
 }
 
@@ -309,6 +324,18 @@ function statusBadge(status, isAdv){
   return '';
 }
 
+/* ========= 検索選択の適用（URL/LS更新を一括） ========= */
+function applySelection(stock){
+  if(!stock){ return; }
+  // URLとlocalStorageに選択コードを保存
+  setQueryCode(stock.code);
+  saveLastCode(stock.code);
+  // 入力欄も整形
+  searchBox.value = `${stock.code} ${stock.name}`.trim();
+  // レンダリング
+  renderStock(stock);
+}
+
 /* ========= イベント（IME対応版） ========= */
 let isComposing = false;
 
@@ -325,7 +352,7 @@ searchBox.addEventListener('input', (e) => {
   updateSuggestions(e.target.value);
 });
 
-// Enter：IME変換中のEnterは無視（keyCode=229は一部ブラウザの変換中判定）
+// Enter：候補があれば先頭、なければ曖昧検索の最初を採用
 searchBox.addEventListener('keydown', (e) => {
   if (isComposing || e.isComposing || e.keyCode === 229) return;
 
@@ -336,9 +363,8 @@ searchBox.addEventListener('keydown', (e) => {
     if (first) {
       const code = first.dataset.code;
       const st = findStock(code);
-      searchBox.value = `${code} ${st?.name||''}`.trim();
       suggestions.style.display='none';
-      renderStock(st);
+      applySelection(st);
       return;
     }
 
@@ -346,9 +372,8 @@ searchBox.addEventListener('keydown', (e) => {
     if (q) {
       const st = STOCKS.find(s => s.code.startsWith(q) || norm(s.name).includes(q) || norm(s.reading).startsWith(q));
       if (st) {
-        searchBox.value = `${st.code} ${st.name}`.trim();
         suggestions.style.display='none';
-        renderStock(st);
+        applySelection(st);
       } else {
         noResult.style.display='block';
       }
@@ -356,15 +381,14 @@ searchBox.addEventListener('keydown', (e) => {
   }
 });
 
-// クリック系
-document.addEventListener('click', e=>{
+// サジェストクリック
+Document.prototype.addEventListener.call(document,'click', (e)=>{
   if(e.target.closest('#suggestList')){
     const item = e.target.closest('.suggestItem'); if(!item) return;
     const code = item.dataset.code;
     const st = findStock(code);
-    searchBox.value = `${code} ${st?.name||''}`.trim();
     suggestions.style.display='none';
-    renderStock(st);
+    applySelection(st);
   } else if(!e.target.closest('.searchWrap')){
     suggestions.style.display='none';
   }
@@ -372,24 +396,9 @@ document.addEventListener('click', e=>{
 
 /* ========= 広告（CPC） ========= */
 const ADS = [
-  {
-    title: '広告枠',
-    desc: '広告枠。',
-    img: 'https://via.placeholder.com/144',
-    href: 'https://example.com/sbi'
-  },
-  {
-    title: '広告枠',
-    desc: '広告枠',
-    img: 'https://via.placeholder.com/144?text=Tool',
-    href: 'https://example.com/tool'
-  },
-  {
-    title: '広告枠',
-    desc: '広告枠',
-    img: 'https://via.placeholder.com/144?text=Pro',
-    href: 'https://example.com/pro'
-  }
+  { title: '広告枠', desc: '広告枠。', img: 'https://via.placeholder.com/144', href: 'https://example.com/sbi' },
+  { title: '広告枠', desc: '広告枠', img: 'https://via.placeholder.com/144?text=Tool', href: 'https://example.com/tool' },
+  { title: '広告枠', desc: '広告枠', img: 'https://via.placeholder.com/144?text=Pro', href: 'https://example.com/pro' }
 ];
 
 function withUtm(url, where){
@@ -465,6 +474,30 @@ document.addEventListener('click', e=>{
     renderRailAds();
     renderInlineAd();
     renderFooterAd(); // モバイルのみ表示
+
+    // 初期選択：URLの ?q=XXXX → 無ければ localStorage → 何もなければ未選択
+    const urlCode = getQueryCode();
+    const lsCode = restoreLastCode();
+    const code = urlCode || lsCode || '';
+    if(code){
+      const st = findStock(code) || STOCKS.find(s=>s.code.startsWith(code));
+      if(st){ applySelection(st); }
+    }
+
+    // 戻る/進むで q が変わったら再描画
+    window.addEventListener('popstate', () => {
+      const q = getQueryCode();
+      if(!q){
+        searchBox.value = '';
+        table.style.display='none';
+        datesPanel.style.display='none';
+        noResult.style.display='block';
+        return;
+      }
+      const st = findStock(q) || STOCKS.find(s=>s.code.startsWith(q));
+      if(st){ applySelection(st); }
+    });
+
   }catch(e){
     noResult.style.display='block';
     noResult.textContent = 'JSON 読み込み失敗: '+e.message;
