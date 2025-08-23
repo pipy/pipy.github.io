@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>機関空売り残高 viewer</title>
-  <link rel="canonical" href="https://pipy.github.io/shorts-viewer/">
-  <meta property="og:url" content="https://pipy.github.io/shorts-viewer/">
+  <link rel="canonical" href="https://pipy.github.io/">
+  <meta property="og:url" content="https://pipy.github.io/">
   <meta name="description" content="JPX翌日報告対応の空売り残高ビューア。銘柄ごとの前日比推移を素早くチェック。">
   <meta name="robots" content="index,follow">
   <style>
@@ -16,8 +16,8 @@
     .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
     .container{max-width:1200px;margin:0 auto}
 
-    .layout{display:grid;grid-template-columns: 1fr;gap:16px}
-    @media(min-width:1024px){ .layout{grid-template-columns: 1fr 300px} }
+    /* 1カラムのみ */
+    .layout{display:grid;grid-template-columns:1fr;gap:16px}
 
     .searchWrap{position:relative;max-width:520px;flex:1}
     #searchBox{padding:10px 12px;width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}
@@ -40,27 +40,6 @@
     .meta{font-size:.85rem;color:#64748b}
     .panel{margin-top:12px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
 
-    /* --- Ads (CPC向け) --- */
-    .ad-pill{font-size:.75rem;background:#fffbe6;border:1px solid #fde68a;color:#92400e;border-radius:999px;padding:2px 8px;margin-right:8px}
-    .ad-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;transition:transform .06s ease, box-shadow .06s ease}
-    .ad-card:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(2,6,23,.08)}
-    .ad-img{width:72px;height:72px;border-radius:8px;object-fit:cover;border:1px solid var(--line);background:#f1f5f9;flex:0 0 72px}
-    .ad-body{flex:1}
-    .ad-title{font-weight:700;margin:0 0 4px;line-height:1.3}
-    .ad-desc{font-size:.9rem;color:#334155;margin:0 0 8px}
-    .ad-cta{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid var(--accent);color:#fff;background:var(--accent);font-weight:600;text-decoration:none}
-    .ad-cta:hover{opacity:.92}
-    .ad-badge{font-size:.72rem;color:#0ea5e9;background:#ecfeff;border:1px solid #bae6fd;border-radius:999px;padding:2px 6px;margin-left:6px}
-
-    .ad-rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:12px;height:max-content}
-    .ad-inline{margin-top:16px}
-
-    /* Sticky bottom ad for mobile */
-    .ad-footer{position:fixed;left:12px;right:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;gap:10px;align-items:center;box-shadow:0 10px 30px rgba(2,6,23,.12);z-index:50}
-    .ad-footer .ad-img{width:48px;height:48px;flex:0 0 48px}
-    .ad-close{margin-left:auto;border:none;background:transparent;font-size:16px;cursor:pointer;line-height:1;color:#475569}
-    @media(min-width:1024px){ .ad-footer{display:none} }
-
     /* a11y helpers */
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
@@ -68,12 +47,11 @@
 <body>
   <div class="container">
     <div class="row" style="justify-content:space-between">
-      <h1 id="pageTitle" aria-live="polite">機関空売り残高 viwer</h1>
+      <h1 id="pageTitle" aria-live="polite">機関空売り残高 viewer</h1>
       <div id="metaInfo" class="meta"></div>
     </div>
 
     <div class="layout">
-      <!-- Main -->
       <main>
         <div class="row" style="margin-bottom:8px">
           <div class="searchWrap">
@@ -107,34 +85,16 @@
 
         <div id="datesPanel" class="panel" style="display:none"></div>
 
-        <!-- Inline CPC Ad -->
-        <div id="adInline" class="ad-inline"></div>
-
         <div class="muted" style="margin-top:12px">
           ※ 当サイトはデータ提供サイトであり、特定銘柄の売買推奨を行うものではありません。データの正確性・完全性は保証されません。<br>
           当サイトに掲載されている情報に起因して生じた損害やトラブルについて、当方は一切の責任を負いかねます。<br>
           ご利用にあたっては内容をご理解のうえ、各自のご判断と責任にてお願いいたします。<br>
-          出典：JPX「空売りの残高に関する情報」等（公式公開後の数値を加工・可視化しています）
+          出典：JPX「空売りの残高に関する情報」等（公式公開後の数値を加工・可視化しています）<br>
+          問い合わせ先：runyora669@meruado.uk<br>
+          © 2025 機関空売り残高 viewer
         </div>
       </main>
-
-      <!-- Right rail (sticky CPC Ad) -->
-      <aside class="ad-rail">
-        <div id="adRail"></div>
-        <div id="adRail2"></div>
-      </aside>
     </div>
-  </div>
-
-  <!-- Mobile sticky footer ad -->
-  <div id="adFooter" class="ad-footer" style="display:none">
-    <img class="ad-img" src="" alt="広告">
-    <div class="ad-body">
-      <div><span class="ad-pill">広告</span><strong class="ad-title"></strong><span class="ad-badge">キャンペーン中</span></div>
-      <div class="ad-desc" style="font-size:.85rem"></div>
-    </div>
-    <a class="ad-cta" href="#" target="_blank" rel="nofollow sponsored noopener">詳細を見る</a>
-    <button class="ad-close" aria-label="広告を閉じる">✕</button>
   </div>
 
 <script>
@@ -315,9 +275,6 @@ function renderStock(stock){
   totalChange.textContent = `${sumCh>=0?'+':''}${fmt(sumCh)}`;
 
   renderDatesPanel(stock);
-
-  // 広告（本文中）を再生成
-  renderInlineAd();
 }
 
 /* バッジ */
@@ -331,7 +288,6 @@ function statusBadge(status, isAdv){
 /* ========= 検索選択の適用（URL/LS更新を一括） ========= */
 function applySelection(stock){
   if(!stock){ return; }
-  // 検索確定：履歴を積む（pushState）
   setQueryCode(stock.code, 'push');
   saveLastCode(stock.code);
   searchBox.value = `${stock.code} ${stock.name}`.trim();
@@ -341,12 +297,10 @@ function applySelection(stock){
 /* ========= ホーム状態（未選択）に戻す ========= */
 function clearSelection({push=false}={}){
   setQueryCode('', push ? 'push' : 'replace');
-  // 前回検索は残しても/消してもOK。残すなら以下行はコメントアウトしても良い
-  // saveLastCode('');
   searchBox.value = '';
   table.style.display='none';
   datesPanel.style.display='none';
-  noResult.style.display='none';         // ← 初期表示は非表示に
+  noResult.style.display='none';
   pageTitle.textContent = '空売り残高';
   document.title = '機関空売り残高 viewer';
 }
@@ -354,27 +308,23 @@ function clearSelection({push=false}={}){
 /* ========= イベント（IME対応版） ========= */
 let isComposing = false;
 
-// IME開始/終了を追跡
 searchBox.addEventListener('compositionstart', () => { isComposing = true; });
 searchBox.addEventListener('compositionend', (e) => {
   isComposing = false;
   updateSuggestions(e.target.value);
 });
 
-// 入力：IME中の中間文字ではサジェストを更新しない
 searchBox.addEventListener('input', (e) => {
   if (isComposing || e.isComposing) return;
   updateSuggestions(e.target.value);
 });
 
-// Enter：候補があれば先頭、なければ曖昧検索の最初。空Enterはホームへ
 searchBox.addEventListener('keydown', (e) => {
   if (isComposing || e.isComposing || e.keyCode === 229) return;
 
   if (e.key === 'Enter') {
     e.preventDefault();
 
-    // 空Enterはホームへ（履歴にホームを積む）
     if (!searchBox.value.trim()) {
       suggestions.style.display='none';
       clearSelection({push:true});
@@ -416,92 +366,16 @@ document.addEventListener('click', (e)=>{
   }
 });
 
-/* ========= 広告（CPC） ========= */
-const ADS = [
-  { title: '広告枠', desc: '広告枠。', img: 'https://via.placeholder.com/144', href: 'https://example.com/sbi' },
-  { title: '広告枠', desc: '広告枠', img: 'https://via.placeholder.com/144?text=Tool', href: 'https://example.com/tool' },
-  { title: '広告枠', desc: '広告枠', img: 'https://via.placeholder.com/144?text=Pro', href: 'https://example.com/pro' }
-];
-
-function withUtm(url, where){
-  const u = new URL(url, location.href);
-  u.searchParams.set('utm_source','shorts');
-  u.searchParams.set('utm_medium', where);
-  u.searchParams.set('utm_campaign','cpc');
-  u.searchParams.set('ts', Date.now());
-  return u.toString();
-}
-
-function adCardHTML(ad, where){
-  const href = withUtm(ad.href, where);
-  return `
-    <a class="ad-card" href="${esc(href)}" target="_blank" rel="nofollow sponsored noopener" data-where="${esc(where)}">
-      <img class="ad-img" src="${esc(ad.img)}" alt="広告">
-      <div class="ad-body">
-        <p class="ad-title"><span class="ad-pill">広告</span>${esc(ad.title)} <span class="ad-badge">キャンペーン中</span></p>
-        <p class="ad-desc">${esc(ad.desc)}</p>
-        <span class="ad-cta" aria-label="詳細を見る（新しいタブ）">詳細を見る ▶</span>
-      </div>
-    </a>
-  `;
-}
-
-function pickAds(n=1){
-  const arr = ADS.slice();
-  arr.sort(()=>Math.random()-0.5);
-  return arr.slice(0,n);
-}
-
-function renderRailAds(){
-  const rail = by('#adRail');
-  const rail2 = by('#adRail2');
-  rail.innerHTML = adCardHTML(pickAds(1)[0], 'rail-1');
-  rail2.innerHTML = adCardHTML(pickAds(1)[0], 'rail-2');
-}
-
-function renderInlineAd(){
-  const inline = by('#adInline');
-  inline.innerHTML = adCardHTML(pickAds(1)[0], 'inline-1');
-}
-
-function renderFooterAd(){
-  const ad = pickAds(1)[0];
-  const wrap = by('#adFooter');
-  wrap.querySelector('.ad-img').src = ad.img;
-  wrap.querySelector('.ad-title').textContent = ad.title;
-  wrap.querySelector('.ad-desc').textContent = ad.desc;
-  wrap.querySelector('.ad-cta').href = withUtm(ad.href,'footer');
-  wrap.style.display = 'flex';
-  wrap.querySelector('.ad-close').addEventListener('click', ()=>{ wrap.style.display='none'; }, {once:true});
-}
-
-/* クリック計測フック（必要に応じて置換：GA/Tag Manager等） */
-function trackAdClick(where, href){
-  console.debug('[ad_click]', where, href);
-}
-
-document.addEventListener('click', e=>{
-  const a = e.target.closest('.ad-card, .ad-footer .ad-cta');
-  if(!a) return;
-  const where = a.dataset.where || 'footer';
-  const href = a.href;
-  trackAdClick(where, href);
-});
-
 /* ========= 起動 ========= */
 (async function init(){
   try{
     await loadJSON();
-    renderRailAds();
-    renderInlineAd();
-    renderFooterAd(); // モバイルのみ表示
 
     // 初期選択：URLの ?q=XXXX がある時だけ復元（localStorageは使わない）
     const urlCode = getQueryCode();
     if (urlCode) {
       const st = findStock(urlCode) || STOCKS.find(s => s.code.startsWith(urlCode));
       if (st) {
-        // URLは既に?q=...なので変えず、stateだけ整える
         history.replaceState({ q: st.code }, '', location.href);
         searchBox.value = `${st.code} ${st.name}`.trim();
         renderStock(st);
@@ -509,7 +383,6 @@ document.addEventListener('click', e=>{
         clearSelection({ push: false });
       }
     } else {
-      // （任意）見た目だけ、前回コードを入力欄にプリフィルするが表示はしない
       const last = restoreLastCode();
       if (last) searchBox.value = last;
       clearSelection({ push: false });
@@ -525,7 +398,6 @@ document.addEventListener('click', e=>{
       }
       const st = findStock(q) || STOCKS.find(s=>s.code.startsWith(q));
       if(st){
-        // 履歴復元なので replace（履歴は増やさない）
         setQueryCode(st.code, 'replace');
         saveLastCode(st.code);
         searchBox.value = `${st.code} ${st.name}`.trim();
