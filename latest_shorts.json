@@ -18,7 +18,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 57000,
-        "change": -2000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28,7 +28,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 49400,
-        "change": -5900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -477,7 +477,7 @@
       {
         "name": "個人",
         "position": 700,
-        "change": 22,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -862,7 +862,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 5900,
-        "change": -200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -935,7 +935,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 743403,
-        "change": 12571,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -955,7 +955,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 373348,
-        "change": 39400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -1146,7 +1146,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 337550,
-        "change": 31400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -1156,7 +1156,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 257134,
-        "change": -8000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -1222,7 +1222,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 643037,
-        "change": -206437,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -2042,7 +2042,7 @@
       {
         "name": "Nomura International plc",
         "position": 10300,
-        "change": 10300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -2052,7 +2052,7 @@
       {
         "name": "UBS AG",
         "position": 9400,
-        "change": -500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -2098,7 +2098,7 @@
       {
         "name": "Nomura International plc",
         "position": 310610,
-        "change": -19800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -2253,7 +2253,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 404030,
-        "change": 1720,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -2263,7 +2263,7 @@
       {
         "name": "Nomura International plc",
         "position": 208458,
-        "change": -359391,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -2319,7 +2319,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 936767,
-        "change": 6920,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -2834,7 +2834,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 258500,
-        "change": 9300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -3134,7 +3134,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 19400,
-        "change": 19400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -3860,7 +3860,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 18900,
-        "change": 1400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -4129,7 +4129,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 322751,
-        "change": 9000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -4826,7 +4826,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 165500,
-        "change": -8000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -5186,7 +5186,7 @@
       {
         "name": "野村證券株式会社",
         "position": 6820185,
-        "change": -412575,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -5538,7 +5538,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 43802,
-        "change": 1900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -6618,7 +6618,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 93100,
-        "change": -10300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -6628,7 +6628,7 @@
       {
         "name": "Squarepoint Ops LLC",
         "position": 52600,
-        "change": 52600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -6984,7 +6984,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 517100,
-        "change": 9400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -7873,7 +7873,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 778800,
-        "change": -35813,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -7903,7 +7903,7 @@
       {
         "name": "Nomura International plc",
         "position": 575160,
-        "change": -72211,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -7979,7 +7979,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 4149771,
-        "change": 73961,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -7999,7 +7999,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 2033000,
-        "change": 112331,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8029,7 +8029,7 @@
       {
         "name": "UBS AG",
         "position": 1001233,
-        "change": 143800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8103,7 +8103,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 542819,
-        "change": -75400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8113,7 +8113,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 436746,
-        "change": -14400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8143,7 +8143,7 @@
       {
         "name": "UBS AG",
         "position": 294293,
-        "change": 294293,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8414,7 +8414,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 1797714,
-        "change": 124200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8434,7 +8434,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 611351,
-        "change": -2500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8444,7 +8444,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 562091,
-        "change": 109791,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -8751,7 +8751,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 350500,
-        "change": -20400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -9234,7 +9234,7 @@
       {
         "name": "JANE STREET SINGAPORE PTE. LIMITED",
         "position": 0,
-        "change": -10940,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -9276,7 +9276,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 127025,
-        "change": -41000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -9328,7 +9328,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2531492,
-        "change": 29994,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -9358,7 +9358,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 1148988,
-        "change": 192150,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -9832,7 +9832,7 @@
       {
         "name": "JANE STREET EUROPE LIMITED",
         "position": 33550,
-        "change": 6360,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10485,7 +10485,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1558430,
-        "change": 240900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10571,7 +10571,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 721300,
-        "change": -8500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10798,7 +10798,7 @@
       {
         "name": "UBS AG",
         "position": 366500,
-        "change": 68100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10808,7 +10808,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 291700,
-        "change": -69400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10895,7 +10895,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1123800,
-        "change": 196600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10905,7 +10905,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 495700,
-        "change": 60000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -10935,7 +10935,7 @@
       {
         "name": "UBS AG",
         "position": 236400,
-        "change": 19200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11161,7 +11161,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 221400,
-        "change": 41300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11171,7 +11171,7 @@
       {
         "name": "Nomura International plc",
         "position": 219500,
-        "change": 25200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11191,7 +11191,7 @@
       {
         "name": "JANE STREET GLOBAL TRADING, LLC",
         "position": 92800,
-        "change": 92800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11269,7 +11269,7 @@
       {
         "name": "Nomura International plc",
         "position": 125900,
-        "change": -12200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11516,7 +11516,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 1981101,
-        "change": -216900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -11661,7 +11661,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 871193,
-        "change": 42200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12128,7 +12128,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 8046914,
-        "change": -92560,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12200,7 +12200,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 116000,
-        "change": -7500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12385,7 +12385,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 879366,
-        "change": 137800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12586,7 +12586,7 @@
       {
         "name": "Nomura International plc",
         "position": 741200,
-        "change": 40800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12616,7 +12616,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 538573,
-        "change": -51500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -12779,7 +12779,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 31600,
-        "change": -9800,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -13414,7 +13414,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 255171,
-        "change": 34500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -13434,7 +13434,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 0,
-        "change": -174921,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -13494,7 +13494,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2404732,
-        "change": 126300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14067,7 +14067,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1075342,
-        "change": -161400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14411,7 +14411,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 158128,
-        "change": 158128,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14743,7 +14743,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 780394,
-        "change": -34900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14753,7 +14753,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 589200,
-        "change": 30300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14849,7 +14849,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 528558,
-        "change": -18300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -14957,7 +14957,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 136489,
-        "change": 2200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -15491,7 +15491,7 @@
       {
         "name": "Nomura International plc",
         "position": 386986,
-        "change": -9266,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -15541,7 +15541,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 63500,
-        "change": -200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -15719,7 +15719,7 @@
       {
         "name": "Nomura International plc",
         "position": 126416,
-        "change": -3331,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -15862,7 +15862,7 @@
       {
         "name": "Nomura International plc",
         "position": 247377,
-        "change": -16323,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -15892,7 +15892,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 151800,
-        "change": 9700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -16004,7 +16004,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 122100,
-        "change": 41900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -16318,7 +16318,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 3750321,
-        "change": -255600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -16744,7 +16744,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 47549,
-        "change": -2900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -16910,7 +16910,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 364742,
-        "change": -6100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -17469,7 +17469,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 897684,
-        "change": -41100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -17542,7 +17542,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 150639,
-        "change": -9960,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -17572,7 +17572,7 @@
       {
         "name": "Nomura International plc",
         "position": 73000,
-        "change": 13900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -17841,7 +17841,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 791590,
-        "change": 23940,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -17965,7 +17965,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 31500,
-        "change": -7000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -18911,7 +18911,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 64189,
-        "change": 64189,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19159,7 +19159,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 776340,
-        "change": -21500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19169,7 +19169,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 567102,
-        "change": -217700,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -19488,7 +19488,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 332300,
-        "change": -18100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19554,7 +19554,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 601528,
-        "change": -92400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19574,7 +19574,7 @@
       {
         "name": "Nomura International plc",
         "position": 312434,
-        "change": -14510,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19594,7 +19594,7 @@
       {
         "name": "UBS AG",
         "position": 194197,
-        "change": 194197,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19724,7 +19724,7 @@
       {
         "name": "Nomura International plc",
         "position": 3212975,
-        "change": 170622,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19754,7 +19754,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 845511,
-        "change": -46200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19856,7 +19856,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 40600,
-        "change": 100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -19898,7 +19898,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 108552,
-        "change": 13400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -20023,7 +20023,7 @@
       {
         "name": "Nomura International plc",
         "position": 265800,
-        "change": 143100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -20183,7 +20183,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 125804,
-        "change": -2400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -20213,7 +20213,7 @@
       {
         "name": "Arrowstreet Capital, Limited Partnership",
         "position": 76400,
-        "change": -120500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -20395,7 +20395,7 @@
       {
         "name": "Nomura International plc",
         "position": 1612,
-        "change": -347,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -20499,7 +20499,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 545338,
-        "change": -34200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -20644,7 +20644,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 84744,
-        "change": 700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -20912,7 +20912,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 147604,
-        "change": -33630,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -21425,7 +21425,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 397800,
-        "change": 397800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -21581,7 +21581,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1935286,
-        "change": 244638,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -21747,7 +21747,7 @@
       {
         "name": "Nomura International plc",
         "position": 101154,
-        "change": -14360,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -21789,7 +21789,7 @@
       {
         "name": "UBS AG",
         "position": 4461173,
-        "change": 4461173,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -21831,7 +21831,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 151137,
-        "change": 1100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -21998,7 +21998,7 @@
       {
         "name": "Nomura Asset Management Singapore Limited",
         "position": 3765100,
-        "change": 672500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -22288,7 +22288,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 326400,
-        "change": -4700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -22308,7 +22308,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 240403,
-        "change": -64290,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -22403,7 +22403,7 @@
       {
         "name": "Nomura International plc",
         "position": 399600,
-        "change": -50300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -22819,7 +22819,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 68782,
-        "change": -3900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -23181,7 +23181,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 315630,
-        "change": -6500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -23233,7 +23233,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 122777,
-        "change": -27100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -23497,7 +23497,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 491534,
-        "change": 29000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -23958,7 +23958,7 @@
       {
         "name": "Nomura International plc",
         "position": 76400,
-        "change": -4400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -23968,7 +23968,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 48600,
-        "change": 48600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -24294,7 +24294,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 13176,
-        "change": -94,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -24627,7 +24627,7 @@
       {
         "name": "Nomura International plc",
         "position": 73400,
-        "change": 10800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -24637,7 +24637,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 65400,
-        "change": 4800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -24725,7 +24725,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 30200,
-        "change": -5900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -24735,7 +24735,7 @@
       {
         "name": "UBS AG",
         "position": 23200,
-        "change": -4900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -25526,7 +25526,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1569800,
-        "change": 155900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -25536,7 +25536,7 @@
       {
         "name": "Nomura International plc",
         "position": 901600,
-        "change": -44400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -25566,7 +25566,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 454400,
-        "change": 16300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -25686,7 +25686,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 60600,
-        "change": 60600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26072,7 +26072,7 @@
       {
         "name": "UBS AG",
         "position": 301500,
-        "change": 22900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26092,7 +26092,7 @@
       {
         "name": "Nomura International plc",
         "position": 183400,
-        "change": 183400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26102,7 +26102,7 @@
       {
         "name": "Arrowstreet Capital, Limited Partnership",
         "position": 180100,
-        "change": -33700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26112,7 +26112,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 67600,
-        "change": -72000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -26392,7 +26392,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 39609,
-        "change": -4100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26402,7 +26402,7 @@
       {
         "name": "Nomura International plc",
         "position": 30499,
-        "change": -19400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26412,7 +26412,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 28392,
-        "change": -3900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -26877,7 +26877,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 143800,
-        "change": -2100,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -26971,7 +26971,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 395045,
-        "change": 27400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27095,7 +27095,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 81800,
-        "change": -24800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27125,7 +27125,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 72400,
-        "change": -10300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27324,7 +27324,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 4486930,
-        "change": -121603,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27334,7 +27334,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 3399542,
-        "change": -310724,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27344,7 +27344,7 @@
       {
         "name": "Nomura International plc",
         "position": 2837065,
-        "change": 275389,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27544,7 +27544,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 67717,
-        "change": 4000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27574,7 +27574,7 @@
       {
         "name": "Nomura International plc",
         "position": 42803,
-        "change": 6852,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -27853,7 +27853,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 3272,
-        "change": 120,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28135,7 +28135,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 210148,
-        "change": -26600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28550,7 +28550,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 6932,
-        "change": 284,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28560,7 +28560,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 5499,
-        "change": 326,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28620,7 +28620,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 141900,
-        "change": -6400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28662,7 +28662,7 @@
       {
         "name": "Nomura International plc",
         "position": 469165,
-        "change": -24700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28692,7 +28692,7 @@
       {
         "name": "UBS AG",
         "position": 92017,
-        "change": -51900,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -28748,7 +28748,7 @@
       {
         "name": "Nomura International plc",
         "position": 410800,
-        "change": 77400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28758,7 +28758,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 274900,
-        "change": -153817,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -28768,7 +28768,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 114540,
-        "change": -142500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -29145,7 +29145,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 2263555,
-        "change": 71314,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -29356,7 +29356,7 @@
       {
         "name": "大和証券株式会社",
         "position": 32400,
-        "change": -30100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -29730,7 +29730,7 @@
       {
         "name": "BNP Paribas Financial Markets SNC",
         "position": 712597,
-        "change": 25200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30197,7 +30197,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 190703,
-        "change": -34100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30464,7 +30464,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 2200006,
-        "change": -37700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30618,7 +30618,7 @@
       {
         "name": "野村證券株式会社",
         "position": 190888,
-        "change": 200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30754,7 +30754,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1956822,
-        "change": -63900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30804,7 +30804,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 675191,
-        "change": -476200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -30962,7 +30962,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 343858,
-        "change": -5200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -31034,7 +31034,7 @@
       {
         "name": "Nomura International plc",
         "position": 1419300,
-        "change": -89200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -31366,7 +31366,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 969842,
-        "change": -43700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -31450,7 +31450,7 @@
       {
         "name": "Nomura International plc",
         "position": 176601,
-        "change": 19430,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -31672,7 +31672,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 152104,
-        "change": 7000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32002,7 +32002,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 81200,
-        "change": -14600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32064,7 +32064,7 @@
       {
         "name": "Nomura International plc",
         "position": 440810,
-        "change": -37744,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32074,7 +32074,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 439037,
-        "change": 77500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32120,7 +32120,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 466993,
-        "change": -17100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32150,7 +32150,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 91425,
-        "change": -800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32160,7 +32160,7 @@
       {
         "name": "UBS AG",
         "position": 88586,
-        "change": 12400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32180,7 +32180,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 85700,
-        "change": -22200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32246,7 +32246,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 9271181,
-        "change": 213400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32266,7 +32266,7 @@
       {
         "name": "UBS AG",
         "position": 5808142,
-        "change": -521500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32490,7 +32490,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 271200,
-        "change": -15600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32699,7 +32699,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 18000,
-        "change": -200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32741,7 +32741,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 100496,
-        "change": -5000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32761,7 +32761,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 85967,
-        "change": -8900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32781,7 +32781,7 @@
       {
         "name": "ベル投資事業有限責任組合1",
         "position": 69200,
-        "change": 18000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -32917,7 +32917,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 79587,
-        "change": -3100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33169,7 +33169,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 880845,
-        "change": 142649,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33333,7 +33333,7 @@
       {
         "name": "Nomura International plc",
         "position": 710944,
-        "change": 122443,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33385,7 +33385,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 5983800,
-        "change": 746400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33425,7 +33425,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1621100,
-        "change": -207900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33511,7 +33511,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 357471,
-        "change": -20600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33521,7 +33521,7 @@
       {
         "name": "Nomura International plc",
         "position": 254512,
-        "change": -86098,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33688,7 +33688,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 120650,
-        "change": -119200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33698,7 +33698,7 @@
       {
         "name": "Nomura International plc",
         "position": 104076,
-        "change": 104076,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33744,7 +33744,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 338400,
-        "change": 74300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -33827,7 +33827,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 16100,
-        "change": -2600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -33893,7 +33893,7 @@
       {
         "name": "大和証券株式会社",
         "position": 321000,
-        "change": 321000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -34059,7 +34059,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 666700,
-        "change": 250600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -34267,7 +34267,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 124900,
-        "change": 6200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -34520,7 +34520,7 @@
       {
         "name": "Nomura International plc",
         "position": 320487,
-        "change": 42686,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -34550,7 +34550,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 126500,
-        "change": 43700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -35128,7 +35128,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 80100,
-        "change": 4200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -35375,7 +35375,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1021609,
-        "change": 9500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -35385,7 +35385,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 389000,
-        "change": 46000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -35405,7 +35405,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 261324,
-        "change": -2200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -35483,7 +35483,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 535320,
-        "change": -5600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -35733,7 +35733,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 17100,
-        "change": 4300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -36060,7 +36060,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 98200,
-        "change": 14200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -36144,7 +36144,7 @@
       {
         "name": "Nomura International plc",
         "position": 565237,
-        "change": 22264,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -36154,7 +36154,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 147371,
-        "change": -25500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -36437,7 +36437,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 13600,
-        "change": -29800,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -36531,7 +36531,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 74102,
-        "change": 5200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -36646,7 +36646,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 4279151,
-        "change": -111813,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37377,7 +37377,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2636207,
-        "change": 9600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37387,7 +37387,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 495735,
-        "change": -16300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37397,7 +37397,7 @@
       {
         "name": "Barclays Bank PLC",
         "position": 491414,
-        "change": -24800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37407,7 +37407,7 @@
       {
         "name": "Nomura International plc",
         "position": 451334,
-        "change": 59155,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37844,7 +37844,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 206300,
-        "change": 23900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37854,7 +37854,7 @@
       {
         "name": "Nomura International plc",
         "position": 190500,
-        "change": 21300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -37962,7 +37962,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 14300,
-        "change": -1600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38035,7 +38035,7 @@
       {
         "name": "大和証券株式会社",
         "position": 39800,
-        "change": -9100,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -38180,7 +38180,7 @@
       {
         "name": "Nomura International plc",
         "position": 85129,
-        "change": -3474,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38200,7 +38200,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 53520,
-        "change": 53520,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38344,7 +38344,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 62500,
-        "change": -800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38428,7 +38428,7 @@
       {
         "name": "Nomura International plc",
         "position": 890100,
-        "change": 39700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38458,7 +38458,7 @@
       {
         "name": "UBS AG",
         "position": 213800,
-        "change": -181800,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -38578,7 +38578,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 888027,
-        "change": -278707,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38588,7 +38588,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 660336,
-        "change": 255800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -38779,7 +38779,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 45482,
-        "change": -2800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39109,7 +39109,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1123689,
-        "change": -108085,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39399,7 +39399,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 63536,
-        "change": -10600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39482,7 +39482,7 @@
       {
         "name": "大和証券株式会社",
         "position": 67700,
-        "change": -8400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39721,7 +39721,7 @@
       {
         "name": "Man Solutions Limited",
         "position": 63400,
-        "change": 9600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39856,7 +39856,7 @@
       {
         "name": "Nomura International plc",
         "position": 277200,
-        "change": -28100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -39918,7 +39918,7 @@
       {
         "name": "UBS AG",
         "position": 65794,
-        "change": -2900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40032,7 +40032,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 78945,
-        "change": -1400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40271,7 +40271,7 @@
       {
         "name": "Nomura International plc",
         "position": 159600,
-        "change": -7100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40399,7 +40399,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 672930,
-        "change": 114700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40573,7 +40573,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 74165,
-        "change": -7300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40650,7 +40650,7 @@
       {
         "name": "大和証券株式会社",
         "position": 630800,
-        "change": 24500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40826,7 +40826,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1545881,
-        "change": 475316,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40836,7 +40836,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1278628,
-        "change": 52500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40846,7 +40846,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 857316,
-        "change": 24300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -40866,7 +40866,7 @@
       {
         "name": "Nomura International plc",
         "position": 226813,
-        "change": -315201,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -41176,7 +41176,7 @@
       {
         "name": "大和証券株式会社",
         "position": 363400,
-        "change": 34400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41269,7 +41269,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 284456,
-        "change": 14700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41362,7 +41362,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 38600,
-        "change": -20100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41382,7 +41382,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 24500,
-        "change": 2400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41392,7 +41392,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 13900,
-        "change": 13900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41601,7 +41601,7 @@
       {
         "name": "Nomura International plc",
         "position": 1265279,
-        "change": 70885,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -41694,7 +41694,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1161972,
-        "change": -6900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -42351,7 +42351,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 729000,
-        "change": 48600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -42668,7 +42668,7 @@
       {
         "name": "Nomura International plc",
         "position": 19103,
-        "change": -9947,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -42710,7 +42710,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 529424,
-        "change": 4100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -42889,7 +42889,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 3471279,
-        "change": -409400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43096,7 +43096,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 103702,
-        "change": -29600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43106,7 +43106,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 99059,
-        "change": -15300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43136,7 +43136,7 @@
       {
         "name": "Nomura International plc",
         "position": 14057,
-        "change": -10556,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -43225,7 +43225,7 @@
       {
         "name": "Nomura International plc",
         "position": 126900,
-        "change": 7400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43370,7 +43370,7 @@
       {
         "name": "Caisse de dépôt et placement du Québec",
         "position": 1314275,
-        "change": -21000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -43534,7 +43534,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 121065,
-        "change": 500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43637,7 +43637,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1712009,
-        "change": 260125,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43647,7 +43647,7 @@
       {
         "name": "大和証券株式会社",
         "position": 1563100,
-        "change": 345600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43667,7 +43667,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1056458,
-        "change": -105900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43858,7 +43858,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 574491,
-        "change": 23500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43868,7 +43868,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 429918,
-        "change": -148800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -43898,7 +43898,7 @@
       {
         "name": "UBS AG",
         "position": 141922,
-        "change": -82800,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -44356,7 +44356,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1177277,
-        "change": -29530,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -44366,7 +44366,7 @@
       {
         "name": "Societe Generale",
         "position": 995908,
-        "change": -321100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -44563,7 +44563,7 @@
       {
         "name": "大和証券株式会社",
         "position": 150992,
-        "change": -66500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -44615,7 +44615,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 27000,
-        "change": 300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -44745,7 +44745,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 171400,
-        "change": 17300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -44891,7 +44891,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 52430,
-        "change": 52430,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -44943,7 +44943,7 @@
       {
         "name": "Nomura International plc",
         "position": 221203,
-        "change": -16485,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45292,7 +45292,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 927740,
-        "change": -57000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45376,7 +45376,7 @@
       {
         "name": "Nomura International plc",
         "position": 120617,
-        "change": 1299,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45418,7 +45418,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 46700,
-        "change": -12900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45460,7 +45460,7 @@
       {
         "name": "大和証券株式会社",
         "position": 141400,
-        "change": -46900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45542,7 +45542,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 67388,
-        "change": 12700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45650,7 +45650,7 @@
       {
         "name": "Nomura International plc",
         "position": 307743,
-        "change": -43083,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -45828,7 +45828,7 @@
       {
         "name": "ベル投資事業有限責任組合1",
         "position": 25700,
-        "change": -82200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46091,7 +46091,7 @@
       {
         "name": "大和証券株式会社",
         "position": 275050,
-        "change": 46700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46101,7 +46101,7 @@
       {
         "name": "Nomura International plc",
         "position": 190619,
-        "change": -35616,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46153,7 +46153,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 292200,
-        "change": -46590,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46163,7 +46163,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 155195,
-        "change": 3300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46183,7 +46183,7 @@
       {
         "name": "UBS AG",
         "position": 140642,
-        "change": -9300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46287,7 +46287,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 63551,
-        "change": -7100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46371,7 +46371,7 @@
       {
         "name": "Nomura International plc",
         "position": 213610,
-        "change": 4678,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46381,7 +46381,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 157881,
-        "change": 1800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46441,7 +46441,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 776200,
-        "change": -20600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46491,7 +46491,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 151800,
-        "change": -30543,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46650,7 +46650,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 592130,
-        "change": -58300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46660,7 +46660,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 425712,
-        "change": -98800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46736,7 +46736,7 @@
       {
         "name": "Nomura International plc",
         "position": 76071,
-        "change": -496,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46746,7 +46746,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 63000,
-        "change": -5200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46796,7 +46796,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1271000,
-        "change": -21431,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46806,7 +46806,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 588512,
-        "change": -41200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -46816,7 +46816,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 105609,
-        "change": -67100,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -46915,7 +46915,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 301823,
-        "change": -31200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -47043,7 +47043,7 @@
       {
         "name": "Nomura International plc",
         "position": 31900,
-        "change": -2800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47053,7 +47053,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 21600,
-        "change": -2400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47176,7 +47176,7 @@
       {
         "name": "Nomura International plc",
         "position": 267514,
-        "change": -6373,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47196,7 +47196,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 84872,
-        "change": -14800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47359,7 +47359,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 229100,
-        "change": -8800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47543,7 +47543,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 3449068,
-        "change": -161000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47563,7 +47563,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2876365,
-        "change": -60447,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -47970,7 +47970,7 @@
       {
         "name": "UBS AG",
         "position": 111000,
-        "change": 111000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48074,7 +48074,7 @@
       {
         "name": "JANE STREET EUROPE LIMITED",
         "position": 0,
-        "change": -14710,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -48178,7 +48178,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 930500,
-        "change": 48600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48323,7 +48323,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 892300,
-        "change": -52600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48479,7 +48479,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 2186989,
-        "change": 225400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48696,7 +48696,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 84320,
-        "change": 41840,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48716,7 +48716,7 @@
       {
         "name": "Nomura International plc",
         "position": 54700,
-        "change": 54700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48800,7 +48800,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 412595,
-        "change": 412595,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48862,7 +48862,7 @@
       {
         "name": "Arrowstreet Capital, Limited Partnership",
         "position": 190400,
-        "change": 190400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48934,7 +48934,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 284500,
-        "change": -32800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -48984,7 +48984,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 339741,
-        "change": -20659,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49014,7 +49014,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 207200,
-        "change": 15000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49084,7 +49084,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 557291,
-        "change": -73800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49094,7 +49094,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 505733,
-        "change": -83500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49240,7 +49240,7 @@
       {
         "name": "Nomura International plc",
         "position": 667947,
-        "change": -27901,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49270,7 +49270,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 179735,
-        "change": 4200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49338,7 +49338,7 @@
       {
         "name": "Nomura International plc",
         "position": 1942438,
-        "change": 1172258,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49358,7 +49358,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 651404,
-        "change": 51600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49434,7 +49434,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 546268,
-        "change": -87996,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49514,7 +49514,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 860339,
-        "change": -17600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49524,7 +49524,7 @@
       {
         "name": "Nomura International plc",
         "position": 740400,
-        "change": -358500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49660,7 +49660,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 899617,
-        "change": 92500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -49726,7 +49726,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1319201,
-        "change": 33600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50066,7 +50066,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1840877,
-        "change": -124200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50132,7 +50132,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1032000,
-        "change": -40200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50253,7 +50253,7 @@
       {
         "name": "Nomura International plc",
         "position": 2346700,
-        "change": 1384700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50367,7 +50367,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 370564,
-        "change": -18600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50377,7 +50377,7 @@
       {
         "name": "Nomura International plc",
         "position": 311636,
-        "change": -10600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50407,7 +50407,7 @@
       {
         "name": "UBS AG",
         "position": 166000,
-        "change": 21500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50507,7 +50507,7 @@
       {
         "name": "Nomura International plc",
         "position": 106500,
-        "change": -4300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50745,7 +50745,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 628520,
-        "change": 628520,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -50853,7 +50853,7 @@
       {
         "name": "UBS AG",
         "position": 842372,
-        "change": -23700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -51310,7 +51310,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 37100,
-        "change": -5400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -51758,7 +51758,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 1839689,
-        "change": 76200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52420,7 +52420,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 570299,
-        "change": -50100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52430,7 +52430,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 564300,
-        "change": 44000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52440,7 +52440,7 @@
       {
         "name": "UBS AG",
         "position": 404096,
-        "change": 77500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52614,7 +52614,7 @@
       {
         "name": "Nomura International plc",
         "position": 190400,
-        "change": -4800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52656,7 +52656,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 56439,
-        "change": -900,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -52760,7 +52760,7 @@
       {
         "name": "Nomura International plc",
         "position": 174200,
-        "change": -18900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52885,7 +52885,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 285345,
-        "change": 8060,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52947,7 +52947,7 @@
       {
         "name": "Nomura International plc",
         "position": 639250,
-        "change": -52437,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -52999,7 +52999,7 @@
       {
         "name": "Nomura International plc",
         "position": 199400,
-        "change": 199400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53061,7 +53061,7 @@
       {
         "name": "UBS AG",
         "position": 1039700,
-        "change": 84800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53071,7 +53071,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 558200,
-        "change": -38100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53081,7 +53081,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 416900,
-        "change": 109600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53091,7 +53091,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 359800,
-        "change": -14700,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -53324,7 +53324,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 433200,
-        "change": -143400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53448,7 +53448,7 @@
       {
         "name": "Nomura International plc",
         "position": 192667,
-        "change": -12700,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -53500,7 +53500,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 188466,
-        "change": -14400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53510,7 +53510,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 10100,
-        "change": -68100,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -53639,7 +53639,7 @@
       {
         "name": "Nomura International plc",
         "position": 20100,
-        "change": -7400,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -53777,7 +53777,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 346700,
-        "change": 25900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53843,7 +53843,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 192800,
-        "change": 12800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53863,7 +53863,7 @@
       {
         "name": "Nomura International plc",
         "position": 136428,
-        "change": -20070,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53893,7 +53893,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 80400,
-        "change": -1900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -53965,7 +53965,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 191500,
-        "change": -37739,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -54017,7 +54017,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 75800,
-        "change": -5800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54027,7 +54027,7 @@
       {
         "name": "Nomura International plc",
         "position": 60700,
-        "change": -11500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54081,7 +54081,7 @@
       {
         "name": "大和証券株式会社",
         "position": 570000,
-        "change": 63400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54133,7 +54133,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 103900,
-        "change": 8700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54282,7 +54282,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 4067561,
-        "change": 314900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54500,7 +54500,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 2400960,
-        "change": 2400960,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54531,7 +54531,7 @@
       {
         "name": "BNP Paribas Financial Markets SNC",
         "position": 909455,
-        "change": 41300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54689,7 +54689,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1849912,
-        "change": -422072,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54813,7 +54813,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 111500,
-        "change": 22400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -54941,7 +54941,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 268200,
-        "change": -79700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -55255,7 +55255,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 98865,
-        "change": 4800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -55447,7 +55447,7 @@
       {
         "name": "Nomura International plc",
         "position": 1938454,
-        "change": -117235,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -55543,7 +55543,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 931570,
-        "change": 931570,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -55734,7 +55734,7 @@
       {
         "name": "Nomura International plc",
         "position": 141850,
-        "change": 141850,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56181,7 +56181,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1555773,
-        "change": 149200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56201,7 +56201,7 @@
       {
         "name": "UBS AG",
         "position": 422089,
-        "change": -51500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56211,7 +56211,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 403300,
-        "change": 403300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56316,7 +56316,7 @@
       {
         "name": "Nomura International plc",
         "position": 18300,
-        "change": -1000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -56393,7 +56393,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1406403,
-        "change": -34400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56795,7 +56795,7 @@
       {
         "name": "ベル投資事業有限責任組合1",
         "position": 227100,
-        "change": 17100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56899,7 +56899,7 @@
       {
         "name": "SMBC日興証券株式会社",
         "position": 103500,
-        "change": 8700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56919,7 +56919,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 56200,
-        "change": 56200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -56929,7 +56929,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 34100,
-        "change": -9000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -57093,7 +57093,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 260500,
-        "change": 14600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57585,7 +57585,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 726300,
-        "change": 47300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57738,7 +57738,7 @@
       {
         "name": "大和証券株式会社",
         "position": 581900,
-        "change": 32200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57811,7 +57811,7 @@
       {
         "name": "UBS AG",
         "position": 146400,
-        "change": 9200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57831,7 +57831,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 83959,
-        "change": -21900,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -57919,7 +57919,7 @@
       {
         "name": "UBS AG",
         "position": 895300,
-        "change": 390700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57929,7 +57929,7 @@
       {
         "name": "Nomura International plc",
         "position": 570000,
-        "change": 106319,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -57949,7 +57949,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 380500,
-        "change": 184900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58131,7 +58131,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 2143431,
-        "change": -81845,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58141,7 +58141,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1929154,
-        "change": 40800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58161,7 +58161,7 @@
       {
         "name": "Nomura International plc",
         "position": 846373,
-        "change": -27001,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58239,7 +58239,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 60100,
-        "change": -7500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58281,7 +58281,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 614900,
-        "change": -124200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58301,7 +58301,7 @@
       {
         "name": "Nomura International plc",
         "position": 280000,
-        "change": -175800,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -58394,16 +58394,6 @@
         "is_advanced": true
       },
       {
-        "name": "大和証券株式会社",
-        "position": 365700,
-        "change": 71300,
-        "status": "normal",
-        "reporting_lost": false,
-        "carried_forward": false,
-        "calc_date": "2026/02/18",
-        "is_advanced": false
-      },
-      {
         "name": "Nomura International plc",
         "position": 270421,
         "change": 0,
@@ -58426,7 +58416,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 198300,
-        "change": -52600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58572,7 +58562,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 380554,
-        "change": 37400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58872,7 +58862,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 438800,
-        "change": -23500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58882,7 +58872,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 249710,
-        "change": 28600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -58892,7 +58882,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 162988,
-        "change": 22900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59012,7 +59002,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 5805373,
-        "change": -332200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59022,7 +59012,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 2131011,
-        "change": 202100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59153,7 +59143,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 66548,
-        "change": 3600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59163,7 +59153,7 @@
       {
         "name": "UBS AG",
         "position": 61601,
-        "change": -4900,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -59419,7 +59409,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 483266,
-        "change": 53996,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59543,7 +59533,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 25917143,
-        "change": -1381700,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -59717,7 +59707,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 121905,
-        "change": 2300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59915,7 +59905,7 @@
       {
         "name": "Nomura International plc",
         "position": 98209,
-        "change": 20364,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -59925,7 +59915,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 53554,
-        "change": 1200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60145,7 +60135,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 326600,
-        "change": 4200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60175,7 +60165,7 @@
       {
         "name": "Man Solutions Limited",
         "position": 76900,
-        "change": -2600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -60329,7 +60319,7 @@
       {
         "name": "Nomura International plc",
         "position": 148500,
-        "change": -8400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60349,7 +60339,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 38500,
-        "change": -9200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60505,7 +60495,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 154128,
-        "change": -6980,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60515,7 +60505,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 119703,
-        "change": 1400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60677,7 +60667,7 @@
       {
         "name": "Nomura International plc",
         "position": 79506,
-        "change": 906,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60707,7 +60697,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 50052,
-        "change": 50052,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -60943,7 +60933,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 174435,
-        "change": -1865,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61148,7 +61138,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 46400,
-        "change": -11300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -61242,7 +61232,7 @@
       {
         "name": "Nomura International plc",
         "position": 162800,
-        "change": -15800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61272,7 +61262,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 21500,
-        "change": -18100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61282,7 +61272,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 21400,
-        "change": -500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61336,7 +61326,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 706169,
-        "change": -8700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61630,7 +61620,7 @@
       {
         "name": "UBS AG",
         "position": 194700,
-        "change": 13000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61650,7 +61640,7 @@
       {
         "name": "Nomura International plc",
         "position": 143595,
-        "change": -55448,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -61807,7 +61797,7 @@
       {
         "name": "Nomura International plc",
         "position": 405772,
-        "change": 14552,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -61899,7 +61889,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 98793,
-        "change": 26300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -62150,7 +62140,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 58231,
-        "change": 4500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -62222,7 +62212,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1799459,
-        "change": 38200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -62242,7 +62232,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 308655,
-        "change": -44745,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -62310,7 +62300,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1058405,
-        "change": -25800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -62581,7 +62571,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 63000,
-        "change": 10200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -63109,7 +63099,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 15600,
-        "change": -13000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -63161,7 +63151,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 16100,
-        "change": -1100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -63307,7 +63297,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 168600,
-        "change": 9800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -63337,7 +63327,7 @@
       {
         "name": "Nomura International plc",
         "position": 28462,
-        "change": -7738,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -63872,7 +63862,7 @@
       {
         "name": "Nomura International plc",
         "position": 1169000,
-        "change": 151100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64130,7 +64120,7 @@
       {
         "name": "Nomura International plc",
         "position": 342467,
-        "change": 5987,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64500,7 +64490,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 56754,
-        "change": -6500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64645,7 +64635,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 227400,
-        "change": 7825,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64655,7 +64645,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 197197,
-        "change": 25375,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64819,7 +64809,7 @@
       {
         "name": "Nomura International plc",
         "position": 355100,
-        "change": 44800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64849,7 +64839,7 @@
       {
         "name": "UBS AG",
         "position": 180700,
-        "change": 180700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64909,7 +64899,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 146415,
-        "change": 4400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -64951,7 +64941,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 515807,
-        "change": -23900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -65202,7 +65192,7 @@
       {
         "name": "Numeric Investors LLC",
         "position": 195700,
-        "change": 14400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -65585,7 +65575,7 @@
       {
         "name": "Nomura International plc",
         "position": 355669,
-        "change": -46731,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -65762,7 +65752,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 60400,
-        "change": -41600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -66043,7 +66033,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 255796,
-        "change": 4600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66085,7 +66075,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 307405,
-        "change": -118500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -66157,7 +66147,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 134620,
-        "change": -2900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66209,7 +66199,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1789244,
-        "change": 1789244,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66468,7 +66458,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 399628,
-        "change": 399628,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66851,7 +66841,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 168022,
-        "change": -28200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66907,7 +66897,7 @@
       {
         "name": "Nomura International plc",
         "position": 154863,
-        "change": -6766,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -66917,7 +66907,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 115942,
-        "change": 13300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67095,7 +67085,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 183600,
-        "change": 6400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67172,7 +67162,7 @@
       {
         "name": "大和証券株式会社",
         "position": 252900,
-        "change": 43200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67466,7 +67456,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 212635,
-        "change": -19200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67657,7 +67647,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 265182,
-        "change": -6300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67667,7 +67657,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 132300,
-        "change": -17400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -67929,7 +67919,7 @@
       {
         "name": "Nomura International plc",
         "position": 36200,
-        "change": -9000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68115,7 +68105,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 70400,
-        "change": 70400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68188,7 +68178,7 @@
       {
         "name": "Nomura International plc",
         "position": 44100,
-        "change": 1100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68208,7 +68198,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 40700,
-        "change": -10700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68218,7 +68208,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 36300,
-        "change": -1700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68370,7 +68360,7 @@
       {
         "name": "Jump Trading Pacific Pte Ltd",
         "position": 83900,
-        "change": -10600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -68724,7 +68714,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1467485,
-        "change": 34900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68744,7 +68734,7 @@
       {
         "name": "Nomura International plc",
         "position": 473437,
-        "change": -78889,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68764,7 +68754,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 246400,
-        "change": -45900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -68862,7 +68852,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 99997,
-        "change": -10300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -68956,7 +68946,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 148077,
-        "change": -14600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -69018,7 +69008,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 251379,
-        "change": 10500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -69110,7 +69100,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 77900,
-        "change": -13300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -69364,7 +69354,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 152892,
-        "change": 3200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -69871,7 +69861,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 199740,
-        "change": -1600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -70054,7 +70044,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 508086,
-        "change": -35145,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -70166,7 +70156,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 854402,
-        "change": -13900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -70249,7 +70239,7 @@
       {
         "name": "UBS AG",
         "position": 24400,
-        "change": -33200,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -70259,7 +70249,7 @@
       {
         "name": "Nomura International plc",
         "position": 22517,
-        "change": -40500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -70384,7 +70374,7 @@
       {
         "name": "Nomura International plc",
         "position": 290017,
-        "change": 23391,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -70582,7 +70572,7 @@
       {
         "name": "UBS AG",
         "position": 31500,
-        "change": 31500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -70749,7 +70739,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 50100,
-        "change": -3000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -70991,7 +70981,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 310976,
-        "change": -26600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -71488,7 +71478,7 @@
       {
         "name": "UBS AG",
         "position": 397376,
-        "change": -30700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -71697,7 +71687,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 385729,
-        "change": -52000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -71819,7 +71809,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 527700,
-        "change": -19100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -71829,7 +71819,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 237876,
-        "change": -39242,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -72173,7 +72163,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 202519,
-        "change": -15000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -72680,7 +72670,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 399848,
-        "change": 3700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -72824,7 +72814,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 299658,
-        "change": 299658,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73177,7 +73167,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 102432,
-        "change": 19870,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73197,7 +73187,7 @@
       {
         "name": "Nomura International plc",
         "position": 70626,
-        "change": -31194,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73399,7 +73389,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 4483267,
-        "change": 630390,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73459,7 +73449,7 @@
       {
         "name": "Nomura International plc",
         "position": 918209,
-        "change": 918209,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73535,7 +73525,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 791451,
-        "change": -175100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73654,7 +73644,7 @@
       {
         "name": "Nomura International plc",
         "position": 217300,
-        "change": -6600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -73664,7 +73654,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 51000,
-        "change": -11100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74522,7 +74512,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 23129,
-        "change": -7400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74564,7 +74554,7 @@
       {
         "name": "Nomura International plc",
         "position": 582900,
-        "change": -104985,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74574,7 +74564,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 461885,
-        "change": -41330,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74644,7 +74634,7 @@
       {
         "name": "大和証券株式会社",
         "position": 103300,
-        "change": 9400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74769,7 +74759,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1440433,
-        "change": -68000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -74789,7 +74779,7 @@
       {
         "name": "Arrowstreet Capital, Limited Partnership",
         "position": 539600,
-        "change": 90400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75096,7 +75086,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 384352,
-        "change": -1300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75158,7 +75148,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1400204,
-        "change": 84100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75188,7 +75178,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 778436,
-        "change": -169464,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -75427,19 +75417,9 @@
         "is_advanced": true
       },
       {
-        "name": "みずほ証券株式会社",
-        "position": 193400,
-        "change": 0,
-        "status": "normal",
-        "reporting_lost": false,
-        "carried_forward": false,
-        "calc_date": "2026/02/18",
-        "is_advanced": false
-      },
-      {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 108200,
-        "change": -32800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75636,18 +75616,8 @@
     "shorts": [
       {
         "name": "大和証券株式会社",
-        "position": 205000,
-        "change": 0,
-        "status": "normal",
-        "reporting_lost": false,
-        "carried_forward": false,
-        "calc_date": "2026/02/18",
-        "is_advanced": false
-      },
-      {
-        "name": "大和証券株式会社",
         "position": 199200,
-        "change": -5800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75657,7 +75627,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 58600,
-        "change": 2500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -75938,7 +75908,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 69200,
-        "change": -8000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76032,7 +76002,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 597200,
-        "change": -22100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76115,7 +76085,7 @@
       {
         "name": "Nomura International plc",
         "position": 139400,
-        "change": -3300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76314,7 +76284,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 355617,
-        "change": -5100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76394,7 +76364,7 @@
       {
         "name": "Nomura International plc",
         "position": 404000,
-        "change": -370300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76585,7 +76555,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 86141,
-        "change": -9300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -76627,7 +76597,7 @@
       {
         "name": "Nomura International plc",
         "position": 3723800,
-        "change": -268200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77130,7 +77100,7 @@
       {
         "name": "Nomura International plc",
         "position": 315670,
-        "change": 107597,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77140,7 +77110,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 145800,
-        "change": -67600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77284,7 +77254,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 147397,
-        "change": -9800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77294,7 +77264,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 130100,
-        "change": -5850,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -77344,7 +77314,7 @@
       {
         "name": "UBS AG",
         "position": 225131,
-        "change": 22100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77670,7 +77640,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 480744,
-        "change": -8900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -77858,7 +77828,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 394359,
-        "change": -276300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -77993,7 +77963,7 @@
       {
         "name": "Nomura International plc",
         "position": 83300,
-        "change": -39600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78080,7 +78050,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 53842,
-        "change": 2600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78256,7 +78226,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 63848,
-        "change": 63848,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78422,7 +78392,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 19400,
-        "change": -28500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -78603,7 +78573,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 357600,
-        "change": -30200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78697,7 +78667,7 @@
       {
         "name": "Nomura International plc",
         "position": 690799,
-        "change": 47711,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78707,7 +78677,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 226371,
-        "change": 17800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78833,7 +78803,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 605621,
-        "change": -22800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78872,18 +78842,8 @@
       },
       {
         "name": "みずほ証券株式会社",
-        "position": 379343,
-        "change": 0,
-        "status": "normal",
-        "reporting_lost": false,
-        "carried_forward": false,
-        "calc_date": "2026/02/18",
-        "is_advanced": false
-      },
-      {
-        "name": "みずほ証券株式会社",
         "position": 376243,
-        "change": -3100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -78903,7 +78863,7 @@
       {
         "name": "UBS AG",
         "position": 242653,
-        "change": 242653,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -79126,7 +79086,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 34700,
-        "change": 34700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -79541,7 +79501,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 28842,
-        "change": -3011165,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -79551,7 +79511,7 @@
       {
         "name": "Nomura International plc",
         "position": 0,
-        "change": -2828684,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -79628,7 +79588,7 @@
       {
         "name": "Nomura International plc",
         "position": 775818,
-        "change": -24902,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -79710,7 +79670,7 @@
       {
         "name": "Nomura International plc",
         "position": 46197,
-        "change": -9863,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -79990,7 +79950,7 @@
       {
         "name": "Nomura International plc",
         "position": 1108264,
-        "change": 384412,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80087,7 +80047,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 336265,
-        "change": -13300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80407,7 +80367,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 680543,
-        "change": 7983,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80604,7 +80564,7 @@
       {
         "name": "CITIC Securities International Capital Management Limited",
         "position": 847600,
-        "change": 25000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80670,7 +80630,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 26800,
-        "change": -4600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80680,7 +80640,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 19903,
-        "change": -2400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80779,7 +80739,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 247816,
-        "change": -13800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -80835,7 +80795,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 55886,
-        "change": -6000,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -80969,7 +80929,7 @@
       {
         "name": "Nomura International plc",
         "position": 71597,
-        "change": 10591,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81083,7 +81043,7 @@
       {
         "name": "Nomura International plc",
         "position": 96820,
-        "change": -27544,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81093,7 +81053,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 80651,
-        "change": -7600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81155,19 +81115,9 @@
         "is_advanced": true
       },
       {
-        "name": "大和証券株式会社",
-        "position": 292500,
-        "change": 0,
-        "status": "normal",
-        "reporting_lost": false,
-        "carried_forward": false,
-        "calc_date": "2026/02/18",
-        "is_advanced": false
-      },
-      {
         "name": "Nomura International plc",
         "position": 182357,
-        "change": -10884,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -81219,7 +81169,7 @@
       {
         "name": "ベル投資事業有限責任組合1",
         "position": 56800,
-        "change": 8000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81271,7 +81221,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 62608,
-        "change": 10000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81654,7 +81604,7 @@
       {
         "name": "Nomura International plc",
         "position": 74041,
-        "change": -12771,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81664,7 +81614,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 52800,
-        "change": 52800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81885,7 +81835,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 141900,
-        "change": -3800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -81965,7 +81915,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 423208,
-        "change": -9300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82005,7 +81955,7 @@
       {
         "name": "Nomura International plc",
         "position": 131943,
-        "change": 70,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82025,7 +81975,7 @@
       {
         "name": "Arrowstreet Capital, Limited Partnership",
         "position": 74600,
-        "change": 74600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82035,7 +81985,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 73900,
-        "change": 4100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82377,7 +82327,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 192200,
-        "change": -26300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82387,7 +82337,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 106300,
-        "change": 106300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82727,7 +82677,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 434503,
-        "change": 18400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -82908,7 +82858,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 339357,
-        "change": 339357,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -83787,7 +83737,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 311348,
-        "change": -40200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -83933,7 +83883,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 9341767,
-        "change": -198277,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -83953,7 +83903,7 @@
       {
         "name": "UBS AG",
         "position": 4152925,
-        "change": -1308402,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -84430,7 +84380,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 237000,
-        "change": 46356,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -84684,7 +84634,7 @@
       {
         "name": "Nomura International plc",
         "position": 301300,
-        "change": -32400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -84704,7 +84654,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 226700,
-        "change": -6700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -84878,7 +84828,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 98147,
-        "change": -5400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -85190,7 +85140,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 323849,
-        "change": 10200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -85370,7 +85320,7 @@
       {
         "name": "Nomura International plc",
         "position": 72000,
-        "change": -3000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -85529,7 +85479,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 502300,
-        "change": 502300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -85803,7 +85753,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 200200,
-        "change": -4800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -86731,7 +86681,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 156111,
-        "change": 156111,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -86975,7 +86925,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 412847,
-        "change": -5600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -87017,7 +86967,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 173515,
-        "change": -2800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -87057,7 +87007,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 101601,
-        "change": -800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -87526,7 +87476,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 92971,
-        "change": -20400,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -87835,7 +87785,7 @@
       {
         "name": "Nomura International plc",
         "position": 97470,
-        "change": -1482,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -87877,7 +87827,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 153038,
-        "change": 27000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88002,7 +87952,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 35100,
-        "change": -2000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88106,7 +88056,7 @@
       {
         "name": "大和証券株式会社",
         "position": 552000,
-        "change": 113000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88229,7 +88179,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 51822,
-        "change": -3900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88460,7 +88410,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 92081,
-        "change": -11100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88564,7 +88514,7 @@
       {
         "name": "大和証券株式会社",
         "position": 39500,
-        "change": -9000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -88648,7 +88598,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 667813,
-        "change": -13500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89057,7 +89007,7 @@
       {
         "name": "Nomura International plc",
         "position": 743229,
-        "change": 17923,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89077,7 +89027,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 345406,
-        "change": 43300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89495,7 +89445,7 @@
       {
         "name": "Nomura International plc",
         "position": 1159680,
-        "change": -87283,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89591,7 +89541,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 3564337,
-        "change": 48700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89601,7 +89551,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 2046600,
-        "change": -96389,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89699,7 +89649,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 869808,
-        "change": 171800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89765,7 +89715,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 624135,
-        "change": 13400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89775,7 +89725,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 499746,
-        "change": 104300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89866,7 +89816,7 @@
       {
         "name": "UBS AG",
         "position": 99300,
-        "change": 13200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -89969,7 +89919,7 @@
       {
         "name": "JANE STREET GLOBAL TRADING, LLC",
         "position": 178100,
-        "change": 43500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90083,7 +90033,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 249119,
-        "change": -28195,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90093,7 +90043,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 142365,
-        "change": 1900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90266,7 +90216,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 279424,
-        "change": 11800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90505,7 +90455,7 @@
       {
         "name": "大和証券株式会社",
         "position": 756500,
-        "change": 70100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90525,7 +90475,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 243700,
-        "change": -30300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90535,7 +90485,7 @@
       {
         "name": "Nomura International plc",
         "position": 205000,
-        "change": -151000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90545,7 +90495,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 177800,
-        "change": 11500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90636,7 +90586,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1285200,
-        "change": 90103,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -90958,7 +90908,7 @@
       {
         "name": "Nomura International plc",
         "position": 3800,
-        "change": -6600,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -91041,7 +90991,7 @@
       {
         "name": "Barclays Bank PLC",
         "position": 340900,
-        "change": 34600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -91051,7 +91001,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 244500,
-        "change": 244500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -91502,7 +91452,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1869703,
-        "change": 45100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -92220,7 +92170,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 170716,
-        "change": 3500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -92230,7 +92180,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 121700,
-        "change": 121700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -92518,7 +92468,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 55984,
-        "change": 1500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93136,7 +93086,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 1648256,
-        "change": 53700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93397,7 +93347,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 825400,
-        "change": 654100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93407,7 +93357,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 339000,
-        "change": 339000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93654,7 +93604,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 12301559,
-        "change": 623978,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93714,7 +93664,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1862950,
-        "change": -126606,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -93961,7 +93911,7 @@
       {
         "name": "Nomura International plc",
         "position": 136611,
-        "change": 136611,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94003,7 +93953,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 176800,
-        "change": 176800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94231,7 +94181,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 275380,
-        "change": 6400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94251,7 +94201,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 261562,
-        "change": 3700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94734,7 +94684,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 330959,
-        "change": -6700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94796,7 +94746,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 323604,
-        "change": 8900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94848,7 +94798,7 @@
       {
         "name": "Nomura International plc",
         "position": 226400,
-        "change": -48300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94970,7 +94920,7 @@
       {
         "name": "BNP Paribas Financial Markets SNC",
         "position": 4047663,
-        "change": 398500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94980,7 +94930,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 2684516,
-        "change": 310341,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -94990,7 +94940,7 @@
       {
         "name": "UBS AG",
         "position": 2105039,
-        "change": -407400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -95062,7 +95012,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 604733,
-        "change": -8100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -95363,7 +95313,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 368300,
-        "change": 368300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -95957,7 +95907,7 @@
       {
         "name": "Nomura International plc",
         "position": 1132652,
-        "change": -30981,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -95967,7 +95917,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1078475,
-        "change": -91500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -96298,7 +96248,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 142690,
-        "change": -2200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -96708,7 +96658,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 87822,
-        "change": 500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -97020,7 +96970,7 @@
       {
         "name": "Nomura International plc",
         "position": 122500,
-        "change": 122500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -97312,7 +97262,7 @@
       {
         "name": "大和証券株式会社",
         "position": 229300,
-        "change": 39300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -97572,7 +97522,7 @@
       {
         "name": "UBS AG",
         "position": 437460,
-        "change": 17668,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -98135,7 +98085,7 @@
       {
         "name": "大和証券株式会社",
         "position": 441500,
-        "change": 59200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -98484,7 +98434,7 @@
       {
         "name": "Nomura International plc",
         "position": 303551,
-        "change": -76757,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -98494,7 +98444,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 248735,
-        "change": 40800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -98524,7 +98474,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 71200,
-        "change": -12600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -98534,7 +98484,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 49099,
-        "change": -79267,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -99150,7 +99100,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 935473,
-        "change": 82245,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -99483,7 +99433,7 @@
       {
         "name": "Nomura International plc",
         "position": 11928000,
-        "change": -602200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -99745,7 +99695,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 77071,
-        "change": 1105,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -99839,7 +99789,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 35962,
-        "change": -31,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -99954,7 +99904,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 7623,
-        "change": -382,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -101151,7 +101101,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 3190734,
-        "change": -102500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -101562,7 +101512,7 @@
       {
         "name": "Nomura International plc",
         "position": 6699130,
-        "change": -7308,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -101699,7 +101649,7 @@
       {
         "name": "Nomura International plc",
         "position": 1293845,
-        "change": -45317,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -101824,7 +101774,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 5308343,
-        "change": 294165,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -101906,7 +101856,7 @@
       {
         "name": "Caisse de dépôt et placement du Québec",
         "position": 1965715,
-        "change": -221100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102279,7 +102229,7 @@
       {
         "name": "BNP Paribas Financial Markets SNC",
         "position": 6892423,
-        "change": -785100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102548,7 +102498,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 2638557,
-        "change": 116400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102630,7 +102580,7 @@
       {
         "name": "Nomura International plc",
         "position": 267589,
-        "change": -27511,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102877,7 +102827,7 @@
       {
         "name": "Nomura International plc",
         "position": 131300,
-        "change": -26200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102887,7 +102837,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 77700,
-        "change": -13400,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -102897,7 +102847,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 65900,
-        "change": -3300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -103558,7 +103508,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 798404,
-        "change": 116700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -103662,7 +103612,7 @@
       {
         "name": "UBS AG",
         "position": 10000,
-        "change": -2800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -103797,7 +103747,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 343857,
-        "change": 4700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -103925,7 +103875,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 51400,
-        "change": -11200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104061,7 +104011,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 318373,
-        "change": -17800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104071,7 +104021,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 169757,
-        "change": 14200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104220,7 +104170,7 @@
       {
         "name": "Diversified Select Opportunities, LLC",
         "position": 183500,
-        "change": 19100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104373,7 +104323,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 92921,
-        "change": -61875,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -104446,7 +104396,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 90400,
-        "change": 1700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104591,7 +104541,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 58600,
-        "change": -24000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -104601,7 +104551,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 0,
-        "change": -165300,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -104611,7 +104561,7 @@
       {
         "name": "Nomura International plc",
         "position": 0,
-        "change": -84851,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -104661,7 +104611,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 125714,
-        "change": 17800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105111,7 +105061,7 @@
       {
         "name": "Nomura International plc",
         "position": 51343,
-        "change": -10023,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -105194,7 +105144,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2053591,
-        "change": 114600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105300,7 +105250,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 119200,
-        "change": -5900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105517,7 +105467,7 @@
       {
         "name": "UBS AG",
         "position": 124929,
-        "change": 1600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105527,7 +105477,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 111941,
-        "change": 111941,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105604,7 +105554,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 1060802,
-        "change": 107300,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105759,7 +105709,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 28272545,
-        "change": -686600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -105852,7 +105802,7 @@
       {
         "name": "BNP Paribas Financial Markets SNC",
         "position": 5966448,
-        "change": 5966448,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106081,7 +106031,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 7188908,
-        "change": -276800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106091,7 +106041,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 5098560,
-        "change": -192100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106111,7 +106061,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 2146614,
-        "change": -30200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106121,7 +106071,7 @@
       {
         "name": "UBS AG",
         "position": 1605364,
-        "change": -178500,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106338,7 +106288,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 638068,
-        "change": 36600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106560,7 +106510,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 1563278,
-        "change": -52200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106570,7 +106520,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 563287,
-        "change": 26272,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106626,7 +106576,7 @@
       {
         "name": "Nomura International plc",
         "position": 150800,
-        "change": -29900,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -106905,7 +106855,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 108060,
-        "change": -2000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107058,7 +107008,7 @@
       {
         "name": "Nomura International plc",
         "position": 76500,
-        "change": -17800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107078,7 +107028,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 58100,
-        "change": 28100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107088,7 +107038,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 57300,
-        "change": -8700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107154,7 +107104,7 @@
       {
         "name": "Nomura International plc",
         "position": 118089,
-        "change": 4696,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107200,7 +107150,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 526747,
-        "change": -28700,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107453,7 +107403,7 @@
       {
         "name": "Citigroup Global Markets Limited",
         "position": 1998060,
-        "change": 169200,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107495,7 +107445,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 3138399,
-        "change": 782100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107572,7 +107522,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 4713857,
-        "change": -600100,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107843,7 +107793,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 372315,
-        "change": -6000,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -107967,7 +107917,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 73707,
-        "change": -1500,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -108414,7 +108364,7 @@
       {
         "name": "みずほ証券株式会社",
         "position": 0,
-        "change": -290900,
+        "change": 0,
         "status": "reporting_lost",
         "reporting_lost": true,
         "carried_forward": false,
@@ -108684,7 +108634,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 5816071,
-        "change": 111140,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -108829,7 +108779,7 @@
       {
         "name": "MERRILL LYNCH INTERNATIONAL",
         "position": 418747,
-        "change": 63600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -108930,7 +108880,7 @@
       {
         "name": "Barclays Capital Securities Ltd",
         "position": 18800,
-        "change": -1800,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -109055,7 +109005,7 @@
       {
         "name": "GOLDMAN SACHS INTERNATIONAL",
         "position": 96654,
-        "change": 96654,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
@@ -109128,7 +109078,7 @@
       {
         "name": "野村證券株式会社",
         "position": 540186,
-        "change": 2600,
+        "change": 0,
         "status": "normal",
         "reporting_lost": false,
         "carried_forward": false,
