@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空売り損益の概算 | 空売りデータノート</title><meta name="description" content="売値・買戻し価格・日数・仮の費用から税引前損益を試算します。">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://pipy.github.io/tools/short-profit.html">
+<meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:site_name" content="空売りデータノート"><meta property="og:title" content="空売り損益の概算"><meta property="og:description" content="売値・買戻し価格・日数・仮の費用から税引前損益を試算します。"><meta property="og:url" content="https://pipy.github.io/tools/short-profit.html">
+<meta name="theme-color" content="#142c41"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "空売り損益の概算", "url": "https://pipy.github.io/tools/short-profit.html", "inLanguage": "ja", "description": "売値・買戻し価格・日数・仮の費用から税引前損益を試算します。"}</script>
+<script defer src="../assets/calculators.js"></script></head><body>
+<a class="skip-link" href="#main">本文へ移動</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">空</span>空売りデータノート</a><nav class="site-nav" aria-label="メインナビゲーション"><a href="../index.html">銘柄検索</a><a href="../guides/index.html">学ぶ</a><a href="../tools/index.html" aria-current="page">計算ツール</a><a href="../glossary.html">用語集</a></nav></div></header>
+<main id="main" class="wrap"><nav class="breadcrumb" aria-label="パンくず"><a href="../index.html">ホーム</a> / <a href="index.html">計算ツール</a></nav><article class="article" style="max-width:880px;margin:auto"><p class="eyebrow">CALCULATOR</p><h1>空売り損益の概算</h1><p class="lead">売値・買戻し価格・日数・仮の費用から税引前損益を試算します。</p><p>初期値は説明用の仮定です。各項目を変更して「計算する」を押してください。</p>
+<form id="profitForm"><div class="form-grid">
+<label>売付価格（円 / 株）<input name="sell" type="number" min="0.01" max="1000000000" step="any" value="1000" required></label>
+<label>買戻し価格（円 / 株）<input name="buy" type="number" min="0" max="1000000000" step="any" value="950" required></label>
+<label>株数（株）<input name="shares" type="number" min="1" max="1000000000" step="1" value="100" required></label>
+<label>仮の貸株料率（年率 %）<input name="rate" type="number" min="0" max="1000" step="any" value="1.5" required></label>
+<label>計算日数（日）<input name="days" type="number" min="1" max="36500" step="1" value="30" required></label>
+<label>その他費用の合計（円）<input name="fees" type="number" min="0" max="1000000000000" step="any" value="500" required></label>
+</div><p class="hint">その他費用は、手数料・逆日歩等の想定合計を入力します。自動では計算しません。</p><button type="submit">計算する</button><p id="profitError" class="error" role="alert" hidden></p></form>
+<div id="profitResult" class="result" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+<noscript><p class="notice">計算ツールにはJavaScriptが必要です。下の計算式で手計算できます。</p></noscript>
+<section><h2>計算式</h2><ul><li>価格差損益 ＝（売付価格 − 買戻し価格）× 株数</li><li>貸株料の概算 ＝ 売付価格 × 株数 × 年率 ÷ 100 × 日数 ÷ 365</li><li>税引前の概算損益 ＝ 価格差損益 − 貸株料の概算 − その他費用</li></ul><p>内部では小数を保持し、表示時に円単位へ丸めます。表示した内訳の合計と結果に丸め差が出る場合があります。</p></section>
+<section><h2>初期値の計算例</h2><p>1,000円で100株を売り950円で買い戻すと、価格差損益は5,000円。年率1.5%、30日という仮定で貸株料は約123円、その他費用500円を引いた概算は約4,377円です。買戻し価格を1,100円に変更すると、費用前でも10,000円の損失になります。</p></section>
+<section><h2>この計算に含めないもの</h2><p>税金、保証金・追証、配当落調整額、費用の日数計算の個別ルール、株式分割などの調整、強制決済、価格の滑りは自動計算しません。貸株料の実際の算定基準は証券会社の条件によって異なります。取引条件に基づく精算額の確認には使えません。</p><p>株価上昇時の空売り損失に理論上の上限はありません。計算ツールの入力上限は入力処理の都合によるもので、損失の上限を意味しません。</p><a href="../guides/short-selling-costs.html">空売りの損益と費用を詳しく読む</a></section>
+</article></main><footer class="site-footer"><div class="wrap"><div class="footer-inner"><div><strong>空売りデータノート</strong><p>公開データと、数字を読むための知識。</p></div><nav class="footer-links" aria-label="運営情報"><a href="../about.html">運営者・編集方針</a><a href="../methodology.html">出典・集計方法</a><a href="../contact.html">お問い合わせ</a><a href="../privacy.html">プライバシーポリシー</a><a href="../disclaimer.html">免責事項</a></nav></div><p>© pipy · 情報提供・学習を目的とし、特定銘柄の売買を推奨しません。</p></div></footer></body></html>

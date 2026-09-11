@@ -1,0 +1,17 @@
+const assert = require('node:assert/strict');
+const {profit, change} = require('../assets/calculators.js');
+const initial = {sell:1000, buy:950, shares:100, rate:1.5, days:30, fees:500};
+const result = profit(initial);
+assert.equal(result.gross, 5000);
+assert.ok(Math.abs(result.borrowing - 123.28767123287672) < 1e-9);
+assert.equal(Math.round(result.net), 4377);
+assert.equal(profit({...initial, buy:1100}).gross, -10000);
+assert.equal(profit({...initial, buy:0, rate:0, fees:0}).net, 100000);
+assert.equal(profit({...initial, buy:1000, rate:0, fees:500}).net, -500);
+assert.deepEqual(change(50000, 60000), {delta:10000, rate:20});
+assert.deepEqual(change(60000, 0), {delta:-60000, rate:-100});
+assert.deepEqual(change(0, 100), {delta:100, rate:null});
+assert.deepEqual(change(0, 0), {delta:0, rate:null});
+assert.ok(Math.abs(change(0.5, 0.6).delta - 0.1) < 1e-12);
+assert.ok(Math.abs(change(0.5, 0.6).rate - 20) < 1e-12);
+console.log('PASS: calculator profit, loss, fees, zero baseline, percentage points');

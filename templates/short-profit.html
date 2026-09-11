@@ -1,0 +1,14 @@
+<p>初期値は説明用の仮定です。各項目を変更して「計算する」を押してください。</p>
+<form id="profitForm"><div class="form-grid">
+<label>売付価格（円 / 株）<input name="sell" type="number" min="0.01" max="1000000000" step="any" value="1000" required></label>
+<label>買戻し価格（円 / 株）<input name="buy" type="number" min="0" max="1000000000" step="any" value="950" required></label>
+<label>株数（株）<input name="shares" type="number" min="1" max="1000000000" step="1" value="100" required></label>
+<label>仮の貸株料率（年率 %）<input name="rate" type="number" min="0" max="1000" step="any" value="1.5" required></label>
+<label>計算日数（日）<input name="days" type="number" min="1" max="36500" step="1" value="30" required></label>
+<label>その他費用の合計（円）<input name="fees" type="number" min="0" max="1000000000000" step="any" value="500" required></label>
+</div><p class="hint">その他費用は、手数料・逆日歩等の想定合計を入力します。自動では計算しません。</p><button type="submit">計算する</button><p id="profitError" class="error" role="alert" hidden></p></form>
+<div id="profitResult" class="result" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+<noscript><p class="notice">計算ツールにはJavaScriptが必要です。下の計算式で手計算できます。</p></noscript>
+<section><h2>計算式</h2><ul><li>価格差損益 ＝（売付価格 − 買戻し価格）× 株数</li><li>貸株料の概算 ＝ 売付価格 × 株数 × 年率 ÷ 100 × 日数 ÷ 365</li><li>税引前の概算損益 ＝ 価格差損益 − 貸株料の概算 − その他費用</li></ul><p>内部では小数を保持し、表示時に円単位へ丸めます。表示した内訳の合計と結果に丸め差が出る場合があります。</p></section>
+<section><h2>初期値の計算例</h2><p>1,000円で100株を売り950円で買い戻すと、価格差損益は5,000円。年率1.5%、30日という仮定で貸株料は約123円、その他費用500円を引いた概算は約4,377円です。買戻し価格を1,100円に変更すると、費用前でも10,000円の損失になります。</p></section>
+<section><h2>この計算に含めないもの</h2><p>税金、保証金・追証、配当落調整額、費用の日数計算の個別ルール、株式分割などの調整、強制決済、価格の滑りは自動計算しません。貸株料の実際の算定基準は証券会社の条件によって異なります。取引条件に基づく精算額の確認には使えません。</p><p>株価上昇時の空売り損失に理論上の上限はありません。計算ツールの入力上限は入力処理の都合によるもので、損失の上限を意味しません。</p><a href="../guides/short-selling-costs.html">空売りの損益と費用を詳しく読む</a></section>
